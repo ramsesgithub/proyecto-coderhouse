@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+
+/* Index */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.divInicial {
+    background-color: #fff;
+    height: 100px;
+}
+
+.divInicial h1{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 60px;
+    text-shadow: 1px 2px 3px #850000;
+    text-align: center;
+}
+
+.divInicial img{
+    height: 95px;
+    top: 5px;
+    position: absolute;
+}
+
+.red{
+    background-color: #850000;
+    width: 100%;
+    height: 7px;
+}
+
+.back{
+    background-image: url("../assets/img/wdqfe-min.jpg");
+    height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    word-spacing: 8px;
+    text-shadow: 3px 2px 2px #850000;
+}
+
+.navbar-index li{
+    height: 180px;
+    width: 230px;
+    background-color: #850000;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-index  a{
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+}
+
+.navbar-index  img{
+    height: 90px;
+}
+
+
+
+/* Footer */
+.footer-index{
+    position: absolute;
+    width: 100%;
+}
+
+
+.background-footer2{
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 250px
+}
+
+.background-footer2 div:first-child{
+    background-color: #850000;
+    height: 6px;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.background-footer2 div:nth-child(3){
+    background-color: #850000;
+    height: 6px;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+
+.background-footer2 p:nth-child(2){
+        color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 41.5%;
+    font-size: 50px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.a-img{
+    position: absolute;
+}
+
+.img1{
+    left: 42%;
+    top: 50%;
+}
+
+.img2{
+    left: 47%;
+    top: 49%;
+}
+
+.img3{
+    left: 52%;
+    top: 50%;
+}
+
+.background-footer2 a img{
+    width: 80px;
+    height: 70px;
+}
+
+.p{
+    color: #fff;
+    position: absolute;
+    top: 78%;
+    left: 42.3%;
+    font-size: 35px;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+
+
+/* NAVBAR */
+
+.headerNav{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #850000;
+    font-size: 35px;    
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+
+
+.nav ul li a:hover{
+    color: #000;
+    transition: 0.5s;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.divIcono img{
+    height: 90px;
+    top: 5px;
+}
+.divIcono{
+    display: flex;
+    align-items: center;                                                                                                                                                            
+}
+.divIcono p{
+    font-size: 28px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Contacto */
+.container-grid-contac{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area:
+    "contac1 contac2"
+}
+
+
+.backgroud-contac{
+    background-color: #000;
+    height: 140px;
+}
+.backgroud-contac h1{
+    color: #fff;
+    text-shadow: 4px 4px #850000;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 50px;
+}
+.backgroud-contac p{
+    color: #fff;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.text-h2{
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 32px;
+    margin: 30px 10px;
+    justify-self: center;
+}
+
+
+.map{
+    grid-area: contac2;
+    margin-top: 100px;
+}
+
+.form-grid{
+    grid-area: contac1;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(2,100px) 1fr 1fr;
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4"
+    "item5 item5"
+    "item6 item6";
+}
+
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+
+.item-gen{
+    margin-left: 5px
+}
+
+.item-gen input{
+    color: #fff;
+}
+
+.item5 textarea{
+    resize: none;
+    width: 562px;
+    height: 250px;
+}
+
+.item6{
+    grid-area: item6;
+    justify-self: center;
+}
+.inputs{
+    background-color: #222222;
+    height: 50px;
+    width: 260px;
+    margin-left: 5px;
+    border: 5px solid #850000
+}
+.input-sub{
+    background-color: #850000;
+    color: #fff;
+    width: 400px;
+}
+
+
+
+/* Sobre-Nosotros */
+.banner-arnol{
+    background-image: url(../assets/img/ARNOL-FOND.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    background-size: cover;
+    width: 100%;
+    height: 80vh
+}
+
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+
+
+.texto h1{
+    font-size: 85px;
+    font-family: 'Anton', sans-serif;
+    text-decoration:underline;
+}
+
+.texto p{
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.texto b{
+    color: #850000;
+}
+
+.servicios{
+    font-family: 'Anton', sans-serif;
+    font-size: 31px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.contenedor{
+    display: flex;
+}
+
+
+.contenedor img{
+    height: 400px;
+    width: 600px;
+    border-radius: 30px;
+    border: solid 2px #850000;
+    margin: 16px;
+}
+.img{
+    position: relative;
+    text-align: center;
+}
+.training{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 3px 1px #222222;
+}
+
+.lorem{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lugares{
+    font-family: 'Anton', sans-serif;
+    font-size: 31px;
+    padding: 20px;
+    padding-top: 90px;
+}
+
+
+.contenedor-entrenamiento{
+    display: flex;
+    padding: 40px;
+    padding-top: 80px;
+}
+
+.img-salas{
+    width: 800px;
+    height: 490px;
+    border: #850000 solid 8px;
+}
+
+.salas h3{
+    font-family: 'Anton', sans-serif;
+    color: #850000;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.salas p{
+    margin: 10px;
+    font-size: 25px;
+}
+
+
+/* Ejercicios */
+
+.ejercicio-h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.background-ejer{
+    background-image: url("../assets/img/wp3006532.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 2000px;
+}
+
+
+.ejeglobal img {
+    height: 300px;
+    width: 400px;
+    border-radius: 40px 40px 0 0;
+    z-index: -2;
+}
+
+.ejeglobal a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.eje{
+    font-size: 45px;
+    text-align: center;
+}
+
+.x-ejer{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.ejeglobal div{
+    position: relative;
+    z-index: 100;
+    margin-top: -40px;
+    background-color: #000;
+    height: 90px;
+    width: 400px;
+    border-radius:30px 30px 0 0;
+}
+
+
+.container-ejercicios{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    row-gap: 70px;
+}
+
+
+
+/* entrenadores */
+
+.backgorund-entrenadores{
+    background-image: url("../assets/img/r.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(0.7);
+    filter: contrast(0.99);
+    width: 100%;
+    height:650px;
+}
+
+.section-entrenadores h1{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+
+.section-entrenadores h2{
+    text-align: start;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 45px;
+    padding: 13px;
+}
+
+.section-entrenadores p{
+    width: 50%;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.backgroud-grey{
+    background-color: #141414;
+}
+
+.backgroud-grey:last-child{
+    background-color: #141414;
+    height: 950px;
+}
+
+.h2-entrenadores h2{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size:45px;
+    padding: 50px 30px;
+}
+
+
+.entglobal img {
+    height: 500px;
+    width: 400px;
+    border-radius: 40px 40px 0 0;
+    z-index: -2;
+}
+
+.entglobal a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nombre-ent{
+    font-size: 45px;
+    text-align: center;
+}
+
+.rol{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(143, 142, 142);
+}
+
+
+.entglobal div{
+    position: relative;
+    z-index: 100;
+    margin-top: -40px;
+    height: 120px;
+    width: 400px;
+    border-radius:30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ent1 div{
+    height: 120px;
+    width: 400px;
+    background-color:#57679F ;
+    color: #000;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.ent2 div{
+    height: 120px;
+    width: 400px;
+    background-color:#000000 ;
+    color: #ffffff;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.ent3 div{
+    height: 120px;
+    width: 400px;
+    background-color:#E3BC56 ;
+    color: #000000;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.ent4 div{
+    height: 120px;
+    width: 400px;
+    background-color:#850000 ;
+    color: grey;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.container-entrenadores{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-content: center; 
+    row-gap: 70px;
+}
