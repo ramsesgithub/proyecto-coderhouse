@@ -129,12 +129,12 @@
 }
 
 .img2{
-    left: 48%;
+    left: 47%;
     top: 49%;
 }
 
 .img3{
-    left: 54%;
+    left: 52%;
     top: 50%;
 }
 
@@ -155,6 +155,12 @@
 
 
 /* NAVBAR */
+.menu-res{
+    display: none;
+}
+.reto-responsive{
+    display: none;
+}
 
 .headerNav{
     display: flex;
@@ -703,5 +709,100 @@
     }
     .p{
         left: 10%;
+    }
+}
+/* responsive ejercios */
+@media (max-width:1202px){
+    .background-ejer{
+        height:2500px;
+    }
+    .container-ejercicios{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:1156px){
+    .nav ul li a{
+        font-size: 30px;
+    }
+    .divIcono p{
+        font-size: 22px;
+    }
+}
+@media (max-width:1014px){
+    .nav ul li a{
+        font-size: 25px;
+    }
+}
+@media (max-width:798px){
+    .background-ejer{
+        height:4400px;
+    }
+    .container-ejercicios{
+        grid-template-columns: auto;
+    }
+    .headerNav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        display: none;
+    }
+    .divIcono p{
+        display: none;
+    }
+    .reto-responsive{
+        display: block;
+    }
+    .menu-res{
+        display: block;
+    }
+    .reto-responsive{
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .rojo{
+        color: #850000;
+    }
+}
+@media (max-width:474px){
+    .reto-responsive{
+        font-size: 30px;
+    }
+    .background-ejer{
+        height:4100px;
+    }
+    .ejeglobal img{
+        height: 240px;
+        width: 300px;
+    }
+    .ejeglobal{
+        justify-self: center;
+    }
+    .ejeglobal div{
+        width: 300px;
+    }
+}
+@media (max-width:474px){
+    .background-ejer{
+        height:3500px;
+    }
+    .reto-responsive{
+        font-size: 20px;
+    }
+    .divIcono img{
+        height: 60px;
+    }
+    .ejeglobal img{
+        height: 200px;
+        width: 250px;
+    }
+    .ejeglobal div{
+        width: 250px;
+    }
+    .eje{
+        font-size: 38px;
+    }
+    .ejercicio-h1{
+        font-size: 42px;
     }
 }
