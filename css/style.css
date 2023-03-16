@@ -14,6 +14,8 @@
 .divInicial {
     background-color: #fff;
     height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .divInicial h1{
@@ -45,6 +47,7 @@
 }
 
 .h2{
+    padding-top: 25px;
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -108,7 +111,7 @@
 }
 
 .background-footer2 p:nth-child(2){
-        color: #fff;
+    color: #fff;
     position: absolute;
     top: 15%;
     left: 41.5%;
@@ -126,12 +129,12 @@
 }
 
 .img2{
-    left: 47%;
+    left: 48%;
     top: 49%;
 }
 
 .img3{
-    left: 52%;
+    left: 54%;
     top: 50%;
 }
 
@@ -144,7 +147,7 @@
     color: #fff;
     position: absolute;
     top: 78%;
-    left: 42.3%;
+    left: 42.1%;
     font-size: 35px;
     font-family: 'IM Fell French Canon SC', serif;
 }
@@ -598,4 +601,107 @@
     justify-content: space-evenly;
     align-content: center; 
     row-gap: 70px;
+}
+
+/* Responsive Index*/
+@media (max-width:1024px){
+    .background-footer2 div:first-child{
+        width: 300px;}
+    .background-footer2 div:nth-child(3){
+        width: 300px;}
+    .background-footer2 p:nth-child(2){
+        left: 38%;
+        }
+    .img1{
+        left: 39%;
+        top: 50%;
+    }
+    .img2{
+        left: 48%;}
+    .img3{
+        left: 56%;}
+    .p{
+        left: 39.2%;}
+}
+@media (max-width:768px){
+    .background-footer2 div:first-child{
+        width: 200px;}
+    .background-footer2 div:nth-child(3){
+        width: 200px;}
+    .background-footer2 p:nth-child(2){
+        left: 34%;
+        }
+    .img1{
+        left: 36%;}
+    .img2{
+        left: 46%;}
+    .img3{
+        left: 57%;}
+    .p{
+        left: 35%;}
+    .divInicial h1{
+        font-size: 55px;
+    }
+}
+@media (max-width:425px){
+    .divInicial h1{
+        font-size: 30px;
+        align-self: center;
+    }
+    .divInicial img{
+        height: 70px;
+        top: 15px;
+        left: -12px;
+    }
+    .h2{
+        font-size: 22px;
+        padding-top: 25px;
+    }
+    .background-footer2 div:first-child{
+        display: none;}
+    .background-footer2 div:nth-child(3){
+        display: none;}
+    .background-footer2 p:nth-child(2){
+        position:unset;
+        text-align: center;
+        padding-top: 35px;}
+    .p{
+        left: 20%;}
+    .img1{
+        left: 20%;
+    }
+    .img2{
+        left: 40%;
+    }
+    .img3{
+        left: 59%;
+    }
+}
+@media (max-width:375px){
+    .divInicial h1{
+        padding-left: 40px;
+    }
+    .p{
+        left: 17%;
+    }
+}
+@media (max-width:320px){
+    .divInicial h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .img1{
+        left: 10%;
+    }
+    .img2{
+        left: 37%;
+    }
+    .img3{
+        left: 65%;
+    }
+    .p{
+        left: 10%;
+    }
 }
