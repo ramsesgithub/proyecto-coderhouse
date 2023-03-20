@@ -97,7 +97,17 @@ b{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
 }
+
+.navbar-index li:hover{
+    width: 310px;
+    height: 260px;
+    transition: 0.5s;
+    
+}
+
 
 .navbar-index  a{
     color: #fff;
