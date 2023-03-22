@@ -12,6 +12,11 @@ b{
     box-sizing: border-box;
     text-decoration: none;
 }
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .divInicial {
     background-color: #fff;
@@ -240,11 +245,28 @@ nav{
     font-size: 35px;
     transition: 0.5s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
 }
-.menu ul li a:hover{
-    font-size: 39px;
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #850000;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
     transition: 0.5s;
 }
+
+.menu ul li a:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}
+.menu ul li a:hover{
+    color: #000;
+}
+
 
 nav #toggle, nav label{
     display: none;
@@ -534,13 +556,12 @@ b{
 
 .backgorund-entrenadores{
     background-image: url("../assets/img/r.jpg");
-    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 600px;
     filter:brightness(0.7);
     filter: contrast(0.99);
-    width: 100%;
-    height:650px;
 }
 
 .section-entrenadores h1{
@@ -557,8 +578,8 @@ b{
 }
 
 .section-entrenadores p{
-    width: 50%;
-    padding-left: 10px;
+    text-align: center;
+    padding-top: 50px;
     font-size: 30px;
 }
 
@@ -580,7 +601,7 @@ b{
 
 
 .entglobal img {
-    height: 500px;
+    height: 450px;
     width: 400px;
     border-radius: 40px 40px 0 0;
     z-index: -2;
@@ -944,5 +965,132 @@ b{
     }
     .ejercicio-h1{
         font-size: 42px;
+    }
+}
+
+/* responsive entrenadores */
+@media(max-width:1586px){
+    .backgroud-grey:last-child{
+        height: 1500px;
+    }
+    .container-entrenadores{
+        grid-template-columns: auto auto;
+        grid-template-rows:  auto auto;
+    }
+}
+
+@media (max-width:796px){
+    .entglobal img {
+        height: 410px;
+        width: 340px;
+    }
+    .ent1 div{
+        height: 120px;
+        width: 340px;
+    }
+    
+    .ent2 div{
+        height: 120px;
+        width: 340px;
+    }
+    
+    .ent3 div{
+        height: 120px;
+        width: 340px;
+    }
+    
+    .ent4 div{
+        height: 120px;
+        width: 340px;
+    }
+}
+@media (max-width:676px){
+    .entglobal img {
+        height: 340px;
+        width: 280px;
+    }
+    .ent1 div{
+        height: 120px;
+        width: 280px;
+    }
+    
+    .ent2 div{
+        height: 120px;
+        width: 280px;
+    }
+    
+    .ent3 div{
+        height: 120px;
+        width: 280px;
+    }
+    
+    .ent4 div{
+        height: 120px;
+        width: 280px;
+    }
+    .nombre-ent{
+        font-size: 40px;
+    }
+}
+@media (max-width:558px){
+    .backgroud-grey:last-child{
+        height: 2000px;
+    }
+    .container-entrenadores{
+        grid-template-columns: 1fr;
+        grid-template-rows:  auto auto auto auto;
+    }
+    .ent1{
+        justify-self: center;
+    }
+    .ent2{
+        justify-self: center;
+    }
+    .ent3{
+        justify-self: center;
+    }
+    .ent4{
+        justify-self: center;
+    }
+}
+@media (max-width:473px){
+    .section-entrenadores h1{
+        font-size: 50px;
+    }
+    
+    .section-entrenadores h2{
+        font-size: 35px;
+    }
+    
+    .section-entrenadores p{
+        font-size: 25px;
+    }
+    .h2-entrenadores h2{
+        font-size: 35px;
+    }
+}
+@media (max-width:385px){
+    .section-entrenadores h1{
+        font-size: 40px;
+    }
+    .section-entrenadores h2{
+        font-size: 30px;
+    }
+    .section-entrenadores p{
+        font-size: 23px;
+    }
+    .h2-entrenadores h2{
+        font-size: 30px;
+    }
+}
+@media (max-width:336px){
+    .section-entrenadores h2{
+        font-size: 26px;
+    }
+    .h2-entrenadores h2{
+        font-size: 26px;
+    }
+    .backgroud-grey:last-child{
+        height: 2100px;
     }
 }
