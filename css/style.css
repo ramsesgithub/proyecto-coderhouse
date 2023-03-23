@@ -397,18 +397,19 @@ b{
 
 .banner-sobre h1{
     color: #fff;
-    font-size: 85px;
+    font-size: 65px;
     font-family: 'Anton', sans-serif;
     text-shadow: 5px 5px #850000;
     padding-left: 10px;
+    padding-top: 20px;
 }
 
 .banner-sobre p{
     color: #fff;
     font-family: 'IM Fell French Canon SC', serif;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .servicios{
@@ -426,7 +427,7 @@ b{
 
 .contenedor img{
     height: 400px;
-    width: 600px;
+    width: 550px;
     border-radius: 30px;
     border: solid 2px #850000;
     margin: 16px;
@@ -448,6 +449,7 @@ b{
 
 .lorem{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 
 .lugares{
@@ -463,6 +465,13 @@ b{
     padding: 40px;
     padding-top: 80px;
 }
+.contenedor-entrenamiento2{
+    display: flex;
+    padding: 40px;
+    padding-top: 80px;
+}
+
+
 
 .img-salas{
     width: 800px;
@@ -1187,5 +1196,169 @@ b{
         margin: 0;
         width: 310px;
         height: 250px;
+    }
+}
+
+/* responsive sobrenostros */
+@media (max-width:1742px){
+    .contenedor img{
+        height: 300px;
+        width: 450px;
+    }
+}
+@media (max-width:1444px){
+    .img-salas{
+        width: 700px;
+        height: 490px;
+        border: #850000 solid 8px;
+    }
+    .contenedor img{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media(max-width:1294px){
+    .contenedor img{
+        height: 300px;
+        width: 320px;
+    }
+    .training{
+        font-size: 60px;
+        top: 35%;
+    }
+}
+@media(max-width:1181px){
+    .contenedor-entrenamiento{
+        flex-direction: column;
+    }
+    .contenedor-entrenamiento2{
+        flex-direction: column-reverse;
+    }
+    .salas p{
+        padding-bottom: 50px;
+        margin: 0;
+    }
+    .salas h3{
+        margin: 0;
+    }
+}
+@media(max-width:1048px){
+    .contenedor img{
+        height: 312px;
+        width: 251px;
+    }
+}
+@media (max-width:843px){
+    .contenedor img{
+        height: 290px;
+        width: 221px;
+    }
+    .training{
+        font-size: 45px;
+    }
+}
+@media(max-width:757px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto ;
+    }
+    .cardio{
+        justify-self: center;
+        align-self: center;
+    }
+    .contenedor-entrenamiento{
+        padding: 0;
+        text-align: center;
+    }
+    .contenedor-entrenamiento2{
+        padding: 70px 0;
+        text-align: center;
+    }
+    .lugares h2{
+        text-align: center;
+        margin: 40px 0;
+    }
+}
+@media(max-width:698px){
+    .contenedor-entrenamiento img{
+        width: 550px;
+    }
+    .contenedor-entrenamiento{
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-entrenamiento2 img{
+        width: 550px;
+    }
+    .contenedor-entrenamiento2{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:549px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .contenedor img{
+        width: 320px;
+        height: 300px;
+    }
+    .contenedor-entrenamiento img{
+        width: 500px;
+        height: 350px;
+    }
+    .contenedor-entrenamiento2 img{
+        width: 500px;
+        height: 350px;
+    }
+}
+@media(max-width:497px){
+    .contenedor-entrenamiento img{
+        width: 400px;
+        height: 320px;
+    }
+    .contenedor-entrenamiento2 img{
+        width:400px;
+        height: 320px;
+    }
+    .banner-sobre h1{
+        font-size: 45px;
+    }
+    .banner-sobre p{
+        font-size: 25px;
+    }
+}
+@media (max-width:395px){
+    .contenedor-entrenamiento img{
+        width: 350px;
+        height: 260px;
+    }
+    .contenedor-entrenamiento2 img{
+        width:350px;
+        height: 260px;
+    }
+    .servicios h2{
+        font-size: 35px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media(max-width:349px){
+    .contenedor img{
+        width: 280px;
+        height: 250px;
+    }
+    .contenedor-entrenamiento img{
+        width: 320px;
+        height: 260px;
+    }
+    .contenedor-entrenamiento2 img{
+        width:320px;
+        height: 260px;
+    }
+    .salas h3{
+        font-size: 30px;
     }
 }
