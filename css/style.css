@@ -221,14 +221,14 @@ b{
 
 .backgroud-contac{
     background-color: #000;
-    height: 140px;
+    height: 150px;
 }
-.backgroud-contac h1{
+.h1-contac{
     padding-top: 10px;
     color: #fff;
     text-shadow: 4px 4px #850000;
     font-family: 'IM Fell French Canon SC', serif;
-    font-size: 50px;
+    font-size: 60px;
 }
 .backgroud-contac p{
     color: #fff;
@@ -239,10 +239,13 @@ b{
 }
 
 .text-h2{
+    justify-self: center;
+}
+.text-h2-con{
     font-family: 'IM Fell French Canon SC', serif;
     font-size: 32px;
     margin: 30px 10px;
-    justify-self: center;
+    color: #000;
 }
 
 
@@ -262,10 +265,12 @@ b{
     "item5 item5"
     "item6 item6";
 }
-.form-grid div p{
+.p-form{
     font-family: 'IM Fell French Canon SC', serif;
-    padding-left: 5px;
+    padding:0px;
+    margin: 0px;
 }
+
 
 
 .item1{
@@ -1032,6 +1037,9 @@ b{
     }
 }
 @media (max-width:573px){
+    .backgroud-contac p{
+        font-size: 20px;
+    }
     .form-grid{
         grid-area: contac1;
         display: grid;
@@ -1069,11 +1077,17 @@ b{
     .text-h2 h2{
         text-align: center;
     }
+    .input-sub{
+        margin-top: 15px;
+    }
 }
 @media(max-width:488px){
     .map iframe{
         width: 320px;
         height: 400px;
+    }
+    .h1-contac{
+        font-size: 45px;
     }
 }
 @media (max-width:410px){
