@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">  <!-- Llamamos al css -->
     <title>Reto Power GYM</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
@@ -12,7 +14,7 @@
     <header class="header">
         <div class="divInicial">
             <a href="index.html"><img src="./assets/img/429d631659a11a9eb666b103d811470a.ico"></a>
-            <h1>CONTRUYE TU CAMBIO FISICO</h1>
+            <h1 class="h1-index">CONTRUYE TU CAMBIO FISICO</h1>
         </div>
     </header>
     <main> 
@@ -28,25 +30,25 @@
                 <nav class="nav-principal">
                     <ul class="navbar-index">
                         <li class="li-red1">
-                            <a href="./pages/ejercicios.html">
+                            <a href="./pages/ejercicios.html" class="a-index">
                                 <img src="./assets/img/dumbbell.ico" alt="">
                                 <p>Ejercicios</p>
                             </a>
                         </li>
                         <li class="li-red2">
-                            <a href="./pages/sobre-nosotros.html">
+                            <a href="./pages/sobre-nosotros.html" class="a-index">
                                 <img src="./assets/img/home.ico" alt="">
                                 <p>Sobre Nosotros</p>
                             </a>
                         </li>
                         <li class="li-red3">
-                            <a href="./pages/entrenadores.html">
+                            <a href="./pages/entrenadores.html" class="a-index">
                                 <img src="./assets/img/activities.ico" alt="">
                                 <p>Entrenadores</p>
                             </a>
                         </li>
                         <li class="li-red4">
-                            <a href="./pages/contacto.html">
+                            <a href="./pages/contacto.html" class="a-index"> 
                                 <img src="./assets/img/70562.png" alt="">
                                 <p>Contacto</p>
                             </a>
@@ -56,23 +58,56 @@
             </div>
         </section>
     </main>
-    <footer class="footer-index">
-        <div class="background-footer2">
-            <div></div>
-            <p>¿QUÉ ESPERAS?</p>
-            <div></div>
-            <a href="#" class="a-img img1">
-                <img src="./assets/img/twitter-icon-white-transparent-6.jpg" alt="">
-            </a>   
-            <a href="#" class="a-img img2">
-                <img src="./assets/img/pngaaa.com-2781017.png" alt="">
-            </a>
-            <a href="#" class="a-img img3">
-                <img src="./assets/img/d.png" alt="">
-            </a>
-            <p class="p">RetoPowerGYM</p>
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-5 pb-2 bg-dark text-white" >
+                <div class="col-xs-12 col-md6 col-lg-3">
+                    <p class="h3">Reto Power GYM</p>
+                    <p class="text-secondary">Buenos Aires,Argentina</p>
+                </div>
+                <div class="col-xs-12 col-md6 col-lg-3">
+                    <p class="h5 mb-3">Explorar</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./entrenadores.html">Entenadores</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md6 col-lg-3">
+                    <p class="h5 mb-3">Siguenos</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Tiktok</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md6 col-lg-3">
+                    <p class="h5 mb-3">Legal</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-4">
+                    <p class="text-white text-center">Copyrigth - All rights reserved © 2023</p>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
 <!--  -->

@@ -25,11 +25,12 @@ b{
     grid-template-columns: auto auto auto;
 }
 
-.divInicial h1{
+.h1-index{
     font-family: 'Jockey One', sans-serif;
     font-size: 60px;
     text-shadow: 1px 2px 3px #850000;
     text-align: center;
+    color: #000;
 }
 
 .divInicial img{
@@ -51,11 +52,12 @@ b{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 240px auto;
 }
+
+
 
 .h2{
     grid-row: 1/2;
@@ -75,11 +77,11 @@ b{
     text-shadow: 5px 4px #850000;
 }
 
-.entrenar{
+.entrenar h2{
     grid-row: 2/3;
     color: white;
     font-family: 'Jockey One', sans-serif;
-    font-size: 40px;
+    font-size: 70px;
     text-shadow: 5px 4px #850000;
     padding-left: 40px;
 }
@@ -89,6 +91,7 @@ b{
     grid-template-columns: 1fr 1fr;
     row-gap: 80px;
     column-gap: 50px;
+    padding: 0;
 }
 .li-red1{
     justify-self: end;
@@ -118,9 +121,10 @@ b{
     width: 310px;
     height: 260px;
     transition: 0.5s;
-    
 }
-
+.a-index{
+    text-decoration: none;
+}
 
 .navbar-index  a{
     color: #fff;
@@ -133,80 +137,6 @@ b{
 }
 
 
-
-/* Footer */
-.footer-index{
-    position: absolute;
-    width: 100%;
-}
-
-
-.background-footer2{
-    position: relative;
-    background-color: #000;
-    width: 100%;
-    height: 250px
-}
-
-.background-footer2 div:first-child{
-    background-color: #850000;
-    height: 6px;
-    width: 500px;
-    position: absolute;
-    top: 30%;
-    left: 2%;
-}
-
-.background-footer2 div:nth-child(3){
-    background-color: #850000;
-    height: 6px;
-    width: 500px;
-    position: absolute;
-    top: 30%;
-    right: 1%;
-}
-
-.background-footer2 p:nth-child(2){
-    color: #fff;
-    position: absolute;
-    top: 15%;
-    left: 41.5%;
-    font-size: 50px;
-    font-family: 'Jockey One', sans-serif;
-}
-
-.a-img{
-    position: absolute;
-}
-
-.img1{
-    left: 42%;
-    top: 50%;
-}
-
-.img2{
-    left: 47%;
-    top: 49%;
-}
-
-.img3{
-    left: 52%;
-    top: 50%;
-}
-
-.background-footer2 a img{
-    width: 80px;
-    height: 70px;
-}
-
-.p{
-    color: #fff;
-    position: absolute;
-    top: 78%;
-    left: 42.1%;
-    font-size: 35px;
-    font-family: 'IM Fell French Canon SC', serif;
-}
 
 
 
@@ -242,7 +172,7 @@ nav{
 .menu ul li a{
     text-decoration: none;
     color: #850000;
-    font-size: 32px;
+    font-size: 25px;
     transition: 0.5s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
@@ -495,8 +425,9 @@ b{
 /* Ejercicios */
 
 .tituloprin{
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    font-family: 'Anton', sans-serif; 
+    font-size: 70px;
+    color: #000;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -529,24 +460,23 @@ b{
     text-align: center;
 }
 
-.x-ejer{
+.xejer{
     font-size: 25px;
-    text-align: center;
-}
+    text-align: center;}
 
 
 .ejeglobal div{
     position: relative;
     z-index: 100;
-    margin-top: -40px;
+    margin-top: -20px;
     background-color: #000;
-    height: 90px;
+    height: 115px;
     width: 400px;
     border-radius:30px 30px 0 0;
 }
 
 
-.container-ejercicios{
+.containesejercicios{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -685,7 +615,7 @@ b{
 
 
 
-/* Responsie NAVBAR */
+/* Responsive NAVBAR */
 @media (max-width:1000px) {
     nav .menu{
         width: 100%;
@@ -729,25 +659,7 @@ b{
 
 
 /* Responsive Index*/
-@media (max-width:1024px){
-    .background-footer2 div:first-child{
-        width: 300px;}
-    .background-footer2 div:nth-child(3){
-        width: 300px;}
-    .background-footer2 p:nth-child(2){
-        left: 38%;
-        }
-    .img1{
-        left: 39%;
-        top: 50%;
-    }
-    .img2{
-        left: 48%;}
-    .img3{
-        left: 56%;}
-    .p{
-        left: 39.2%;}
-}
+
 @media (max-width:992px){
     .back{
         grid-template-columns: 1fr;
@@ -762,29 +674,22 @@ b{
     .nav-principal{
         grid-column: 1/4;
         grid-row: 2/3;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media (max-width:768px){
-    .background-footer2 div:first-child{
-        width: 200px;}
-    .background-footer2 div:nth-child(3){
-        width: 200px;}
-    .background-footer2 p:nth-child(2){
-        left: 34%;
-        }
-    .img1{
-        left: 36%;}
-    .img2{
-        left: 46%;}
-    .img3{
-        left: 57%;}
-    .p{
-        left: 35%;}
-    .divInicial h1{
+@media(max-width:759px){
+    .h1-index{
+        font-size: 50px;
+    }
+}
+@media(max-width:655px){
+    .h1-index{
         font-size: 40px;
     }
 }
+
 @media (max-width:676px){
     .navbar-index li{
         height: 200px;
@@ -799,10 +704,6 @@ b{
         height: 190px;
         width: 210px;
     }
-    .background-footer2 div:first-child{
-        display: none;}
-    .background-footer2 div:nth-child(3){
-        display: none;}
 }
 @media (max-width:539px){
     .navbar-index li{
@@ -826,22 +727,22 @@ b{
 }
 @media (max-width:474px){
     .navbar-index li{
-        width: 140px;
+        width: 160px;
         height: 132px;
     }
     .navbar-index a{
-        font-size: 21px;
+        font-size: 18px;
     }
     .navbar-index img{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .h2{
         font-size: 24px;
     }
 }
 @media (max-width:425px){
-    .divInicial h1{
+    .h1-index{
         font-size: 30px;
         align-self: center;
     }
@@ -854,22 +755,15 @@ b{
         font-size: 22px;
         padding-top: 25px;
     }
-    .background-footer2 p:nth-child(2){
-        position:unset;
-        text-align: center;
-        padding-top: 35px;}
-    .p{
-        left: 20%;}
-    .img1{
-        left: 20%;
-    }
-    .img2{
-        left: 40%;
-    }
-    .img3{
-        left: 59%;
+}
+
+@media(max-width:398px){
+    .navbar-index li{
+        width: 140px;
+        height: 162px;
     }
 }
+
 @media (max-width:375px){
     .navbar-index{
         row-gap: 50px;
@@ -889,18 +783,6 @@ b{
     h2{
         font-size: 25px;
     }
-    .img1{
-        left: 10%;
-    }
-    .img2{
-        left: 37%;
-    }
-    .img3{
-        left: 65%;
-    }
-    .p{
-        left: 10%;
-    }
 }
 
 
@@ -911,7 +793,7 @@ b{
     .background-ejer{
         height:2500px;
     }
-    .container-ejercicios{
+    .containesejercicios{
         grid-template-columns: auto auto;
     }
 }
@@ -930,9 +812,10 @@ b{
 }
 @media (max-width:798px){
     .background-ejer{
-        height:4400px;
+        height:4800px;
+        background-position: center;
     }
-    .container-ejercicios{
+    .containesejercicios{
         grid-template-columns: auto;
     }
     .rojo{
