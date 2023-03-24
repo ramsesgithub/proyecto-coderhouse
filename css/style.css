@@ -500,12 +500,14 @@ b{
 }
 
 .section-entrenadores h1{
+    color: #000;
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 60px;
 }
 
 .section-entrenadores h2{
+    color: #000;
     text-align: start;
     font-family: 'Jockey One', sans-serif;
     font-size: 45px;
@@ -513,6 +515,7 @@ b{
 }
 
 .section-entrenadores p{
+    color: #000;
     text-align: center;
     padding-top: 50px;
     font-size: 30px;
@@ -520,11 +523,12 @@ b{
 
 .backgroud-grey{
     background-color: #141414;
+    height: 200px;
 }
 
 .backgroud-grey:last-child{
     background-color: #141414;
-    height: 950px;
+    height: 1000px;
 }
 
 .h2-entrenadores h2{
@@ -532,8 +536,14 @@ b{
     font-family: 'Anton', sans-serif;
     font-size:45px;
     padding: 50px 30px;
+    text-shadow: 4px 2px #850000;
 }
 
+.h2-entrenadores p{
+    color: #929090;
+    padding: 3  0px 20px;
+    font-size: 20px;
+}
 
 .entglobal img {
     height: 450px;
@@ -611,6 +621,7 @@ b{
     justify-content: space-evenly;
     align-content: center; 
     row-gap: 70px;
+    padding-top: 100px;
 }
 
 
@@ -867,6 +878,12 @@ b{
     }
 }
 
+@media(max-width:868px){
+    .section-entrenadores p{
+        font-size: 20px;
+    }
+}
+
 @media (max-width:796px){
     .entglobal img {
         height: 410px;
@@ -951,10 +968,13 @@ b{
     }
     
     .section-entrenadores p{
-        font-size: 25px;
+        font-size: 20px;
     }
     .h2-entrenadores h2{
         font-size: 35px;
+    }
+    .h2-entrenadores p{
+        font-size: 15px;
     }
 }
 @media (max-width:385px){
@@ -965,7 +985,7 @@ b{
         font-size: 30px;
     }
     .section-entrenadores p{
-        font-size: 23px;
+        font-size: 19px;
     }
     .h2-entrenadores h2{
         font-size: 30px;
