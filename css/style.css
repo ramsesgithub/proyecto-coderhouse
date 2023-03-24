@@ -347,11 +347,12 @@ b{
     padding-top: 30px;
 }
 
-.servicios{
+.servicios h2{
     font-family: 'Anton', sans-serif;
-    font-size: 31px;
+    font-size: 35px;
     padding: 20px;
     padding-top: 50px;
+    color: #000;
 }
 
 .contenedor{
@@ -387,11 +388,12 @@ b{
     text-align: center;
 }
 
-.lugares{
+.lugares h2{
     font-family: 'Anton', sans-serif;
     font-size: 31px;
     padding: 20px;
     padding-top: 90px;
+    color: #000;
 }
 
 
@@ -651,10 +653,10 @@ b{
     }
     nav #toggle:checked ~ .menu{
         position: absolute;
-        top: 13.3%;
+        top: 8.5%;
         left: 0;
         background-color: #141414;
-        height: 300px;
+        height: 350px;
         z-index: 1;
     }
     .menu ul li a{
