@@ -1,43 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+
 
 /* Index */
 b{
     color: #850000;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-.divInicial {
-    background-color: #fff;
-    height: 100px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
 
-.h1-index{
-    font-family: 'Jockey One', sans-serif;
-    font-size: 60px;
-    text-shadow: 1px 2px 3px #850000;
-    text-align: center;
-    color: #000;
-}
-
-.divInicial img{
-    height: 95px;
-    top: 5px;
-    position: absolute;
-}
 
 .red{
     background-color: #850000;

@@ -1,0 +1,19 @@
+.divInicial {
+    background-color: #fff;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .h1-index{
+        font-family: 'Jockey One', sans-serif;
+        font-size: 60px;
+        text-shadow: 1px 2px 3px $colorprinci;
+        text-align: center;
+        color: #000;
+    }
+    img{
+        height: 95px;
+        top: 5px;
+        position: absolute;
+    }
+}
+

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.divInicial {
+  background-color: #fff;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto; }
+  .divInicial .h1-index {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 60px;
+    text-shadow: 1px 2px 3px #850000;
+    text-align: center;
+    color: #000; }
+  .divInicial img {
+    height: 95px;
+    top: 5px;
+    position: absolute; }
+
+.red {
+  background-color: #850000;
+  width: 100%;
+  height: 7px; }
+
+.back {
+  background-image: url("../../../assets/img/wdqfe-min.jpg");
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 240px auto; }
+  .back .h2 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding-top: 25px;
+    justify-self: center;
+    color: #fff;
+    font-size: 30px;
+    word-spacing: 8px;
+    text-shadow: 3px 2px 2px #850000; }
+
+.entrenar h2 {
+  grid-row: 2/3;
+  color: white;
+  font-family: 'Jockey One', sans-serif;
+  font-size: 70px;
+  text-shadow: 5px 4px #850000;
+  padding-left: 40px; }
+
+.nav-principal {
+  grid-row: 2/3;
+  grid-column: 2/3; }
+  .nav-principal .navbar-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 50px;
+    padding: 0; }
+    .nav-principal .navbar-index .li-red1 {
+      justify-self: end; }
+    .nav-principal .navbar-index .li-red3 {
+      justify-self: end; }
+
+.navbar-index li {
+  height: 230px;
+  width: 280px;
+  background-color: #850000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer; }
+  .navbar-index li:hover {
+    width: 310px;
+    height: 260px;
+    transition: 0.5s; }
+
+.navbar-index .a-index {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 33px; }
+
+.navbar-index img {
+  height: 90px; }
