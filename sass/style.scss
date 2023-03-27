@@ -1,9 +1,18 @@
 //utilities
 @import "./utilities/variables";
-//base
+//base reset
 @import "./base/resets";
-//base
+//base typo
 @import "./base/typo";
-//layout
+//base general
+@import "./base/base";
+
+//layout index
 @import "./layout/index/header";
 @import "./layout/index/main";
+
+//layout navbar-pages
+@import "./layout/navbar-pages/navbar";
+
+//contacto
+@import "./layout/contacto/main";
