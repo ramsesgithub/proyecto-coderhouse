@@ -1,0 +1,41 @@
+/* Responsive NAVBAR */
+@media (max-width:1000px) {
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    nav label{
+        display: inline-flex;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        align-items: center;
+    }
+    nav #toggle:checked ~ .menu{
+        position: absolute;
+        top: 8.5%;
+        left: 0;
+        background-color: #141414;
+        height: 350px;
+        z-index: 1;
+    }
+    .menu ul li a{
+        font-size: 29px;
+    }
+}
+@media (max-width:320px){
+    .logo p{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .menu ul li a{
+        font-size: 25px;
+    }
+}
