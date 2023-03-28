@@ -39,7 +39,7 @@ b {
 
 /* Index */
 .back {
-  background-image: url("../../../assets/img/wdqfe-min.jpg");
+  background-image: url("../assets/img/wdqfe-min.jpg");
   height: 1000px;
   width: 100%;
   background-repeat: no-repeat;
@@ -195,7 +195,10 @@ nav #toggle, nav label {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: repeat(2, 100px) 1fr 1fr;
-  grid-template-areas: "item1 item2" "item3 item4" "item5 item5" "item6 item6"; }
+  grid-template-areas: "item1 item2"
+ "item3 item4"
+ "item5 item5"
+ "item6 item6"; }
   .form-grid .item-gen .p-form {
     font-family: 'IM Fell French Canon SC', serif;
     padding: 0px;
@@ -490,129 +493,3 @@ nav #toggle, nav label {
   color: grey;
   font-family: 'Jockey One', sans-serif; }
 
-/* Responsive NAVBAR */
-@media (max-width: 1000px) {
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden; }
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0; }
-  nav label {
-    display: inline-flex;
-    color: black;
-    cursor: pointer;
-    align-items: center; }
-  nav #toggle:checked ~ .menu {
-    position: absolute;
-    top: 8.5%;
-    left: 0;
-    background-color: #141414;
-    height: 350px;
-    z-index: 1; }
-  .menu ul li a {
-    font-size: 29px; } }
-
-@media (max-width: 320px) {
-  .logo p {
-    font-size: 20px; }
-  .logo img {
-    width: 70px; }
-  .menu ul li a {
-    font-size: 25px; } }
-
-/* Responsive Index*/
-@media (max-width: 992px) {
-  .back {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto; }
-  .h2 {
-    grid-column: 1/4; }
-  .entrenar {
-    display: none; }
-  .nav-principal {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    justify-content: center;
-    align-items: center; } }
-
-@media (max-width: 759px) {
-  .h1-index {
-    font-size: 50px; } }
-
-@media (max-width: 655px) {
-  .h1-index {
-    font-size: 40px; } }
-
-@media (max-width: 676px) {
-  .navbar-index li {
-    height: 200px;
-    width: 230px; }
-  .navbar-index a {
-    font-size: 29px; } }
-
-@media (max-width: 576px) {
-  .navbar-index li {
-    height: 190px;
-    width: 210px; } }
-
-@media (max-width: 539px) {
-  .navbar-index li {
-    width: 180px;
-    height: 162px; }
-  .navbar-index a {
-    font-size: 25px; }
-  .navbar-index img {
-    width: 75px;
-    height: 80px; }
-  .divInicial a {
-    display: none; }
-  .divInicial {
-    display: flex;
-    justify-content: center; } }
-
-@media (max-width: 474px) {
-  .navbar-index li {
-    width: 160px;
-    height: 132px; }
-  .navbar-index a {
-    font-size: 18px; }
-  .navbar-index img {
-    width: 60px;
-    height: 60px; }
-  .h2 {
-    font-size: 24px; } }
-
-@media (max-width: 425px) {
-  .h1-index {
-    font-size: 30px;
-    align-self: center; }
-  .divInicial img {
-    height: 70px;
-    top: 15px;
-    left: -12px; }
-  .h2 {
-    font-size: 22px;
-    padding-top: 25px; } }
-
-@media (max-width: 398px) {
-  .navbar-index li {
-    width: 140px;
-    height: 162px; } }
-
-@media (max-width: 375px) {
-  .navbar-index {
-    row-gap: 50px;
-    column-gap: 20px; }
-  .p {
-    left: 17%; }
-  .back {
-    height: 800px; } }
-
-@media (max-width: 320px) {
-  .divInicial h1 {
-    font-size: 25px; }
-  h2 {
-    font-size: 25px; } }
