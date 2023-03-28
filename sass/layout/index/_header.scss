@@ -11,11 +11,29 @@
         text-shadow: 1px 2px 3px $colorprinci;
         text-align: center;
         color: #000;
-    }
+        @media(max-width:759px){
+            font-size: 50px;}
+        @media(max-width:655px){
+            font-size: 40px;
+            align-self: center;}
+            @include mobile{
+                font-size: 31px;
+            }
+        }
     img{
         height: 95px;
         top: 5px;
         position: absolute;
     }
+    @media (max-width:539px){
+        display: flex;
+        justify-content: center;
+            a{
+                display: none;
+            }
 }
+}
+
+
+
 
