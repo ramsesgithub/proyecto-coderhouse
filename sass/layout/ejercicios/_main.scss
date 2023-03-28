@@ -1,0 +1,62 @@
+/* Ejercicos */
+
+.background-ejer{
+    background-image: url("../assets/img/wp3006532.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 2000px;
+}
+
+
+.tituloprin{
+    font-family: 'Anton', sans-serif; 
+    font-size: 70px;
+    color: $colorsecun;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+.ejeglobal{
+    img{
+        height: 300px;
+        width: 400px;
+        border-radius: 40px 40px 0 0;
+        z-index: -2;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    div{
+        position: relative;
+        z-index: 100;
+        margin-top: -20px;
+        background-color: $colorsecun;;
+        height: 115px;
+        width: 400px;
+        border-radius:30px 30px 0 0;
+    }
+}
+
+
+.eje{
+    font-size: 45px;
+    text-align: center;
+}
+
+.xejer{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.containesejercicios{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    row-gap: 70px;
+}

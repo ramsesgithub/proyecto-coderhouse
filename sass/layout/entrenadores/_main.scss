@@ -1,0 +1,154 @@
+/* Entrenadores */
+
+.backgorund-entrenadores{
+    background-image: url("../assets/img/r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 600px;
+    filter:brightness(0.7);
+    filter: contrast(0.99);
+}
+
+
+.section-entrenadores{
+    h1{
+        color: $colorsecun;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+    }
+    h2{
+        color: $colorsecun;
+        text-align: start;
+        font-family: 'Jockey One', sans-serif;
+        font-size: 45px;
+        padding: 13px;
+    }
+    p{
+        text-shadow: 3px 3px $colorprinci;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 30px;
+    }
+}
+
+
+.backgroud-grey{
+    background-color: #141414;
+    height: 200px;
+}
+
+
+.backgroud-grey:last-child{
+    background-color: #141414;
+    height: 1000px;
+}
+
+
+.h2-entrenadores{
+    h2{
+        color: #fff;
+        font-family: 'Anton', sans-serif;
+        font-size:45px;
+        padding: 50px 30px;
+        text-shadow: 4px 2px $colorprinci;
+    }
+    p{
+        color: #929090;
+        padding: 3  0px 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+.container-entrenadores{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-content: center; 
+    row-gap: 70px;
+    padding-top: 100px;
+}
+
+
+.entglobal{
+    img{
+        height: 450px;
+        width: 400px;
+        border-radius: 40px 40px 0 0;
+        z-index: -2;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    div{
+        position: relative;
+        z-index: 100;
+        margin-top: -40px;
+        height: 120px;
+        width: 400px;
+        border-radius:30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.nombre-ent{
+    font-size: 45px;
+    text-align: center;
+}
+
+.rol{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(143, 142, 142);
+}
+
+
+.ent1{
+    div{
+        height: 120px;
+        width: 400px;
+        background-color:#57679F ;
+        color: #000;
+        font-family: 'Jockey One', sans-serif;
+    }
+}
+
+.ent2{
+    div{
+        height: 120px;
+        width: 400px;
+        background-color:#000000 ;
+        color: #ffffff;
+        font-family: 'Jockey One', sans-serif;
+    }
+}
+
+.ent3{
+    div{
+        height: 120px;
+        width: 400px;
+        background-color:#E3BC56 ;
+        color: #000000;
+        font-family: 'Jockey One', sans-serif;
+    }
+}
+
+.ent4 {
+    div{    
+        height: 120px;
+        width: 400px;
+        background-color:#850000 ;
+        color: grey;
+        font-family: 'Jockey One', sans-serif;
+    }
+}

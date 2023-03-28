@@ -20,6 +20,7 @@ b {
   width: 100%;
   height: 7px; }
 
+/* Header Index */
 .divInicial {
   background-color: #fff;
   height: 100px;
@@ -36,6 +37,7 @@ b {
     top: 5px;
     position: absolute; }
 
+/* Index */
 .back {
   background-image: url("../../../assets/img/wdqfe-min.jpg");
   height: 1000px;
@@ -102,6 +104,7 @@ b {
 .navbar-index img {
   height: 90px; }
 
+/* Navbar Pages */
 .nav-wraper {
   width: 100%;
   margin: 0 auto;
@@ -151,6 +154,7 @@ nav {
 nav #toggle, nav label {
   display: none; }
 
+/* Contacto */
 .backgroud-contac {
   background-color: #000;
   height: 150px; }
@@ -230,3 +234,258 @@ nav #toggle, nav label {
   width: 260px;
   margin-left: 5px;
   border: 5px solid #850000; }
+
+/* Sobre Nosotros */
+.banner-sobre {
+  background-color: #000;
+  width: 100%;
+  height: 290px; }
+  .banner-sobre h1 {
+    color: #fff;
+    font-size: 65px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 5px 5px #850000;
+    padding-left: 10px;
+    padding-top: 20px; }
+  .banner-sobre p {
+    color: #fff;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 30px; }
+
+.servicios h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+  padding: 20px;
+  padding-top: 50px;
+  color: #000; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .contenedor img {
+    height: 400px;
+    width: 550px;
+    border-radius: 30px;
+    border: solid 2px #850000;
+    margin: 16px; }
+
+.img {
+  position: relative;
+  text-align: center; }
+  .img .training {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 3px 1px #222222; }
+  .img .lorem {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; }
+
+.lugares h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 31px;
+  padding: 20px;
+  padding-top: 90px;
+  color: #000; }
+
+.contenedor-entrenamiento {
+  display: flex;
+  padding: 40px;
+  padding-top: 80px; }
+  .contenedor-entrenamiento .img-salas {
+    width: 800px;
+    height: 490px;
+    border: #850000 solid 8px; }
+
+.contenedor-entrenamiento2 {
+  display: flex;
+  padding: 40px;
+  padding-top: 80px; }
+  .contenedor-entrenamiento2 .img-salas {
+    width: 800px;
+    height: 490px;
+    border: #850000 solid 8px; }
+
+.salas h3 {
+  font-family: 'Anton', sans-serif;
+  color: #850000;
+  font-size: 40px;
+  margin-left: 15px; }
+
+.salas p {
+  margin: 10px;
+  font-size: 25px; }
+
+/* Ejercicos */
+.background-ejer {
+  background-image: url("../assets/img/wp3006532.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 2000px; }
+
+.tituloprin {
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+  color: #000;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.ejeglobal img {
+  height: 300px;
+  width: 400px;
+  border-radius: 40px 40px 0 0;
+  z-index: -2; }
+
+.ejeglobal a {
+  text-decoration: none;
+  color: #fff; }
+
+.ejeglobal div {
+  position: relative;
+  z-index: 100;
+  margin-top: -20px;
+  background-color: #000;
+  height: 115px;
+  width: 400px;
+  border-radius: 30px 30px 0 0; }
+
+.eje {
+  font-size: 45px;
+  text-align: center; }
+
+.xejer {
+  font-size: 25px;
+  text-align: center; }
+
+.containesejercicios {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  row-gap: 70px; }
+
+/* Entrenadores */
+.backgorund-entrenadores {
+  background-image: url("../assets/img/r.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  filter: brightness(0.7);
+  filter: contrast(0.99); }
+
+.section-entrenadores h1 {
+  color: #000;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px; }
+
+.section-entrenadores h2 {
+  color: #000;
+  text-align: start;
+  font-family: 'Jockey One', sans-serif;
+  font-size: 45px;
+  padding: 13px; }
+
+.section-entrenadores p {
+  text-shadow: 3px 3px #850000;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px; }
+
+.backgroud-grey {
+  background-color: #141414;
+  height: 200px; }
+
+.backgroud-grey:last-child {
+  background-color: #141414;
+  height: 1000px; }
+
+.h2-entrenadores h2 {
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 45px;
+  padding: 50px 30px;
+  text-shadow: 4px 2px #850000; }
+
+.h2-entrenadores p {
+  color: #929090;
+  padding: 3  0px 20px;
+  font-size: 20px;
+  text-align: center; }
+
+.container-entrenadores {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  align-content: center;
+  row-gap: 70px;
+  padding-top: 100px; }
+
+.entglobal img {
+  height: 450px;
+  width: 400px;
+  border-radius: 40px 40px 0 0;
+  z-index: -2; }
+
+.entglobal a {
+  text-decoration: none;
+  color: #fff; }
+
+.entglobal div {
+  position: relative;
+  z-index: 100;
+  margin-top: -40px;
+  height: 120px;
+  width: 400px;
+  border-radius: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.nombre-ent {
+  font-size: 45px;
+  text-align: center; }
+
+.rol {
+  font-size: 25px;
+  text-align: center;
+  color: #8f8e8e; }
+
+.ent1 div {
+  height: 120px;
+  width: 400px;
+  background-color: #57679F;
+  color: #000;
+  font-family: 'Jockey One', sans-serif; }
+
+.ent2 div {
+  height: 120px;
+  width: 400px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Jockey One', sans-serif; }
+
+.ent3 div {
+  height: 120px;
+  width: 400px;
+  background-color: #E3BC56;
+  color: #000000;
+  font-family: 'Jockey One', sans-serif; }
+
+.ent4 div {
+  height: 120px;
+  width: 400px;
+  background-color: #850000;
+  color: grey;
+  font-family: 'Jockey One', sans-serif; }
