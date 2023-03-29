@@ -31,7 +31,7 @@ nav{
         li{
             a{
                 text-decoration: none;
-                color: #850000;
+                color: $colorprinci;
                 font-size: 25px;
                 transition: 0.5s;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -39,7 +39,7 @@ nav{
                 &::after{
                     content: "";
                     position: absolute;
-                    background-color: #850000;
+                    background-color: $colorprinci;
                     height: 5px;
                     width: 0;
                     left: 0;
@@ -52,6 +52,12 @@ nav{
                 }
                 &:hover{
                     color:$colorsecun;
+                }
+                @include tablet{
+                    color: #fff;
+                    &:hover{
+                        color: #fff;
+                    }
                 }
             }
         }

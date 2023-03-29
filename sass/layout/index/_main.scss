@@ -27,6 +27,8 @@
 
 
 .entrenar{
+    -webkit-animation: scale-in-hor-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     @include tablet{
         display: none;
     }
@@ -73,6 +75,8 @@
 
 
 .navbar-index{
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     li{
         height: 230px;
         width: 280px;
@@ -81,7 +85,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.5s;
         cursor: pointer;
         @include mobile{
             width: 160px;
@@ -89,11 +92,6 @@
         }
         @include mobile_s{
             width: 150px;
-        }
-        &:hover{
-            width: 310px;
-            height: 260px;
-            transition: 0.5s;
         }
     }
     .a-index{

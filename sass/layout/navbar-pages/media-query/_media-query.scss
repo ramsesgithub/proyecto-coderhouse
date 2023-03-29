@@ -12,20 +12,20 @@
     }
     nav label{
         display: inline-flex;
-        color: rgb(0, 0, 0);
+        color: rgb(184, 10, 10);
         cursor: pointer;
         align-items: center;
     }
     nav #toggle:checked ~ .menu{
         position: absolute;
-        top: 8.5%;
+        top: 13%;
         left: 0;
-        background-color: #00000077;
+        background-color: #000000b0;
         height: 350px;
-        z-index: 1;
+        z-index: 10000;
     }
     .menu ul li a{
-        font-size: 29px;
+        font-size: 25px;
     }
 }
 @media (max-width:320px){
