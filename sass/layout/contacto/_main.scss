@@ -10,6 +10,12 @@
         text-shadow: 4px 4px $colorprinci;
         font-family: 'IM Fell French Canon SC', serif;
         font-size: 60px;
+        @include mobile{
+            font-size: 46px;
+        }
+        @include mobile_s{
+            font-size: 34px;
+        }
     }
     p{
         color: #fff;
@@ -17,6 +23,18 @@
         font-size: 24px;
         padding-left: 10px;
         padding-top: 10px;
+        @include laptop{
+            font-size: 22px;
+        }
+        @include mobile{
+            font-size: 20px;
+        }
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    @include mobile{
+        height: 170px;
     }
 }
 
@@ -26,7 +44,21 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-area:
-    "contac1 contac2"
+    "contac1 contac2";
+    @include laptop{
+        height: 1700px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-area:
+        "contac1"
+        "contac2";
+    }
+    section{
+        @include laptop{
+            justify-self: center;
+            align-self:center
+        }
+    }
 }
 
 
@@ -37,6 +69,9 @@
         font-size: 32px;
         margin: 30px 10px;
         color: $colorsecun;
+        @include mobile{
+            text-align: center;
+        }
     }
 }
 
@@ -44,6 +79,25 @@
 .map{
     grid-area: contac2;
     margin-top: 120px;
+    iframe{
+        @include laptop_L{
+            width: 470px;
+            height: 450px;
+        }
+        @include mobile{
+            width: 300px;
+            height: 300px;
+        }
+        @include mobile{
+            width: 280px;
+            height: 240px;
+        }
+        @include mobile_s{
+            width: 230px;
+            height: 220px;
+        }
+    }
+    
 }
 
 .form-grid{
@@ -81,6 +135,15 @@
             resize: none;
             width: 562px;
             height: 250px;
+            @include mobile{
+                justify-self: center;
+                width: 300px;
+                height: 220px;
+                margin: 0;
+            }
+            @include mobile_s{
+                width: 220px;
+            }
         }
     }
     .item6{
@@ -91,10 +154,58 @@
             background-color: $colorprinci;
             color: #fff;
             width: 400px;
+            @include mobile{
+                width: 300px;
+            }
+            @include mobile_s{
+                width: 210px;
+            }
         }
+        @include mobile{
+            padding: 0px;
+        }
+        
     }
     .item-gen{
-        margin-left: 5px
+        margin-left: 5px;
+        @include mobile{
+            margin: 0;
+        }
+    }
+    @include mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,100px);
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item5"
+        "item5"
+        "item6";
+        .item1{
+            justify-self: center;
+        }
+        .item2{
+            justify-self: center;
+        }
+        .item3{
+            justify-self: center;
+        }
+        .item4{
+            justify-self: center;
+        }
+        .item5{
+            justify-self: center;
+        }
+        .text-h2 h2{
+            text-align: center;
+        }
+        .input-sub{
+            margin-top: 15px;
+        }
     }
 }
 
@@ -108,4 +219,7 @@
     width: 260px;
     margin-left: 5px;
     border: 5px solid $colorprinci;
+    @include mobile_s{
+        width: 210px;
+    }
 }
