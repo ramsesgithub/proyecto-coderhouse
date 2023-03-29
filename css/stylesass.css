@@ -569,12 +569,21 @@ nav #toggle, nav label {
   height: 600px;
   filter: brightness(0.7);
   filter: contrast(0.99); }
+  @media screen and (max-width: 1024px) {
+    .backgorund-entrenadores {
+      height: 400px; } }
 
 .section-entrenadores h1 {
   color: #000;
   text-align: center;
   font-family: 'Anton', sans-serif;
   font-size: 60px; }
+  @media screen and (max-width: 1024px) {
+    .section-entrenadores h1 {
+      font-size: 50px; } }
+  @media screen and (max-width: 336px) {
+    .section-entrenadores h1 {
+      font-size: 45px; } }
 
 .section-entrenadores h2 {
   color: #000;
@@ -582,6 +591,16 @@ nav #toggle, nav label {
   font-family: 'Jockey One', sans-serif;
   font-size: 45px;
   padding: 13px; }
+  @media screen and (max-width: 1024px) {
+    .section-entrenadores h2 {
+      font-size: 40px;
+      padding: 10px 2px; } }
+  @media screen and (max-width: 580px) {
+    .section-entrenadores h2 {
+      font-size: 35px; } }
+  @media screen and (max-width: 336px) {
+    .section-entrenadores h2 {
+      font-size: 30px; } }
 
 .section-entrenadores p {
   text-shadow: 3px 3px #850000;
@@ -589,14 +608,23 @@ nav #toggle, nav label {
   text-align: center;
   padding-top: 50px;
   font-size: 30px; }
+  @media screen and (max-width: 1024px) {
+    .section-entrenadores p {
+      font-size: 20px;
+      padding-top: 0; } }
+  @media screen and (max-width: 580px) {
+    .section-entrenadores p {
+      font-size: 15px; } }
 
 .backgroud-grey {
   background-color: #141414;
-  height: 200px; }
-
-.backgroud-grey:last-child {
-  background-color: #141414;
-  height: 1000px; }
+  height: 1200px; }
+  @media screen and (max-width: 1024px) {
+    .backgroud-grey {
+      height: 2000px; } }
+  @media screen and (max-width: 580px) {
+    .backgroud-grey {
+      height: 2600px; } }
 
 .h2-entrenadores h2 {
   color: #fff;
@@ -604,12 +632,21 @@ nav #toggle, nav label {
   font-size: 45px;
   padding: 50px 30px;
   text-shadow: 4px 2px #850000; }
+  @media screen and (max-width: 580px) {
+    .h2-entrenadores h2 {
+      font-size: 35px; } }
+  @media screen and (max-width: 336px) {
+    .h2-entrenadores h2 {
+      font-size: 25px; } }
 
 .h2-entrenadores p {
   color: #929090;
   padding: 3  0px 20px;
   font-size: 20px;
   text-align: center; }
+  @media screen and (max-width: 580px) {
+    .h2-entrenadores p {
+      font-size: 15px; } }
 
 .container-entrenadores {
   width: 100%;
@@ -619,12 +656,24 @@ nav #toggle, nav label {
   align-content: center;
   row-gap: 70px;
   padding-top: 100px; }
+  @media screen and (max-width: 1293px) {
+    .container-entrenadores {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto; } }
+  @media screen and (max-width: 580px) {
+    .container-entrenadores {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto; } }
 
 .entglobal img {
-  height: 450px;
-  width: 400px;
+  height: 350px;
+  width: 300px;
   border-radius: 40px 40px 0 0;
   z-index: -2; }
+  @media screen and (max-width: 336px) {
+    .entglobal img {
+      width: 250px;
+      height: 300px; } }
 
 .entglobal a {
   text-decoration: none;
@@ -634,7 +683,7 @@ nav #toggle, nav label {
   position: relative;
   z-index: 100;
   margin-top: -40px;
-  height: 120px;
+  height: 150px;
   width: 400px;
   border-radius: 30px 30px;
   display: flex;
@@ -651,32 +700,60 @@ nav #toggle, nav label {
   color: #8f8e8e; }
 
 .ent1 div {
-  height: 120px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
   background-color: #57679F;
   color: #000;
   font-family: 'Jockey One', sans-serif; }
+  @media screen and (max-width: 336px) {
+    .ent1 div {
+      width: 250px; } }
+
+@media screen and (max-width: 580px) {
+  .ent1 {
+    justify-self: center; } }
 
 .ent2 div {
-  height: 120px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
   background-color: #000000;
   color: #ffffff;
   font-family: 'Jockey One', sans-serif; }
+  @media screen and (max-width: 336px) {
+    .ent2 div {
+      width: 250px; } }
+
+@media screen and (max-width: 580px) {
+  .ent2 {
+    justify-self: center; } }
 
 .ent3 div {
-  height: 120px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
   background-color: #E3BC56;
   color: #000000;
   font-family: 'Jockey One', sans-serif; }
+  @media screen and (max-width: 336px) {
+    .ent3 div {
+      width: 250px; } }
+
+@media screen and (max-width: 580px) {
+  .ent3 {
+    justify-self: center; } }
 
 .ent4 div {
-  height: 120px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
   background-color: #850000;
   color: grey;
   font-family: 'Jockey One', sans-serif; }
+  @media screen and (max-width: 336px) {
+    .ent4 div {
+      width: 250px; } }
+
+@media screen and (max-width: 580px) {
+  .ent4 {
+    justify-self: center; } }
 
 /* Responsive NAVBAR-PAGES */
 @media (max-width: 1000px) {
@@ -710,26 +787,6 @@ nav #toggle, nav label {
     width: 70px; }
   .menu ul li a {
     font-size: 25px; } }
-
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; } }
-
-@keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; } }
 
 @-webkit-keyframes scale-in-center {
   0% {
