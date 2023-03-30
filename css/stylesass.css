@@ -804,6 +804,44 @@ nav #toggle, nav label {
   .ent4 {
     justify-self: center; } }
 
+.contendor-beneficios {
+  background-color: #000000;
+  height: 400px;
+  width: 100%s;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  @media screen and (max-width: 950px) {
+    .contendor-beneficios {
+      display: flex;
+      flex-direction: column;
+      height: 690px; } }
+
+.beneficios {
+  grid-column: 1/6; }
+
+.beneficios h3 {
+  color: #850000;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 35px; }
+
+.beneficios p {
+  color: #555353;
+  font-size: 15px;
+  padding: 0 40px; }
+
+.h4-p h4 {
+  color: #850000;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 25px; }
+
+.h4-p p {
+  color: #555353;
+  font-size: 15px;
+  padding: 0 40px; }
+
 /* Responsive NAVBAR-PAGES */
 @media (max-width: 1000px) {
   nav .menu {
