@@ -385,6 +385,9 @@
     }
 }
 
+
+
+
 /* responsive contacto */
 @media (max-width:1294px){
     .map iframe{
@@ -492,6 +495,14 @@
         height: 250px;
     }
 }
+
+
+
+
+
+
+
+
 
 /* responsive sobrenostros */
 @media (max-width:1742px){

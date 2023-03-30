@@ -11,7 +11,7 @@
 }
 
 @mixin tablet{
-    @media screen and (max-width:918px){
+    @media screen and (max-width:950px){
         @content;
     }
 }
