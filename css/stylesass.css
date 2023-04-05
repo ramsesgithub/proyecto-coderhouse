@@ -20,6 +20,9 @@ b {
   width: 100%;
   height: 7px; }
 
+.bg-dark {
+  background-color: #000 !important; }
+
 /* Header Index */
 .divInicial {
   background-color: #fff;
@@ -221,20 +224,20 @@ nav #toggle, nav label {
     @media screen and (max-width: 336px) {
       .backgroud-contac .h1-contac {
         font-size: 34px; } }
-  .backgroud-contac p {
+  .backgroud-contac h2 {
     color: #fff;
     font-family: 'IM Fell French Canon SC', serif;
     font-size: 24px;
     padding-left: 10px;
     padding-top: 10px; }
     @media screen and (max-width: 1024px) {
-      .backgroud-contac p {
+      .backgroud-contac h2 {
         font-size: 22px; } }
     @media screen and (max-width: 580px) {
-      .backgroud-contac p {
+      .backgroud-contac h2 {
         font-size: 20px; } }
     @media screen and (max-width: 580px) {
-      .backgroud-contac p {
+      .backgroud-contac h2 {
         font-size: 16px; } }
   @media screen and (max-width: 580px) {
     .backgroud-contac {
@@ -393,14 +396,14 @@ nav #toggle, nav label {
     @media screen and (max-width: 950px) {
       .banner-sobre h1 {
         font-size: 45px; } }
-  .banner-sobre p {
+  .banner-sobre h2 {
     color: #fff;
     font-family: 'IM Fell French Canon SC', serif;
     font-size: 30px;
     padding-left: 10px;
     padding-top: 30px; }
     @media screen and (max-width: 950px) {
-      .banner-sobre p {
+      .banner-sobre h2 {
         font-size: 25px; } }
 
 .servicios h2 {
@@ -536,7 +539,8 @@ nav #toggle, nav label {
   font-family: 'Anton', sans-serif;
   font-size: 70px;
   color: #000;
-  margin-bottom: 50px;
+  text-shadow: 2px 2px #fff;
+  padding: 30px 0;
   text-align: center; }
   @media screen and (max-width: 580px) {
     .tituloprin {
@@ -624,10 +628,12 @@ nav #toggle, nav label {
       height: 400px; } }
 
 .section-entrenadores h1 {
+  text-shadow: 2px 2px #fff;
   color: #000;
   text-align: center;
   font-family: 'Anton', sans-serif;
-  font-size: 60px; }
+  font-size: 60px;
+  padding: 20px 0; }
   @media screen and (max-width: 1024px) {
     .section-entrenadores h1 {
       font-size: 50px; } }
@@ -636,34 +642,17 @@ nav #toggle, nav label {
       font-size: 45px; } }
 
 .section-entrenadores h2 {
-  color: #000;
-  text-align: start;
-  font-family: 'Jockey One', sans-serif;
-  font-size: 45px;
-  padding: 13px; }
-  @media screen and (max-width: 1024px) {
-    .section-entrenadores h2 {
-      font-size: 40px;
-      padding: 10px 2px; } }
-  @media screen and (max-width: 580px) {
-    .section-entrenadores h2 {
-      font-size: 35px; } }
-  @media screen and (max-width: 336px) {
-    .section-entrenadores h2 {
-      font-size: 30px; } }
-
-.section-entrenadores p {
   text-shadow: 3px 3px #850000;
   color: #ffffff;
   text-align: center;
   padding-top: 50px;
   font-size: 30px; }
   @media screen and (max-width: 1024px) {
-    .section-entrenadores p {
+    .section-entrenadores h2 {
       font-size: 20px;
       padding-top: 0; } }
   @media screen and (max-width: 580px) {
-    .section-entrenadores p {
+    .section-entrenadores h2 {
       font-size: 15px; } }
 
 .backgroud-grey {
@@ -851,7 +840,7 @@ nav #toggle, nav label {
     overflow: hidden; }
   .menu ul {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 0.5rem 0; }
   nav label {
     display: inline-flex;
@@ -860,10 +849,10 @@ nav #toggle, nav label {
     align-items: center; }
   nav #toggle:checked ~ .menu {
     position: absolute;
-    top: 13%;
+    top: 14%;
     left: 0;
-    background-color: #000000b0;
-    height: 350px;
+    background-color: #000000;
+    height: 100%;
     z-index: 10000; }
   .menu ul li a {
     font-size: 25px; } }

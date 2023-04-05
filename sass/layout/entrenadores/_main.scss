@@ -18,10 +18,12 @@
 
 .section-entrenadores{
     h1{
+        text-shadow: 2px 2px #fff;
         color: $colorsecun;
         text-align: center;
         font-family: 'Anton', sans-serif;
         font-size: 60px;
+        padding: 20px 0;
         @include laptop{
             font-size: 50px;
         }
@@ -30,23 +32,6 @@
         }
     }
     h2{
-        color: $colorsecun;
-        text-align: start;
-        font-family: 'Jockey One', sans-serif;
-        font-size: 45px;
-        padding: 13px;
-        @include laptop{
-            font-size: 40px;
-            padding: 10px 2px;
-        }
-        @include mobile{
-            font-size: 35px;
-        }
-        @include mobile_s{
-            font-size: 30px;
-        }
-    }
-    p{
         text-shadow: 3px 3px $colorprinci;
         color: #ffffff;
         text-align: center;
