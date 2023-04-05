@@ -1,3 +1,6 @@
+<!-- SOLO FUNCIONA SI SUBIMOS LA PAGINA A UN SERVIDOR -->
+
+
 <?php
 $nombre = $_POST['name'];
 $apellido = $_POST['last-name'];
@@ -20,5 +23,5 @@ $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+header("Location:../index.html");
 ?>
