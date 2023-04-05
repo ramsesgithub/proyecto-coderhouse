@@ -294,7 +294,7 @@ nav #toggle, nav label {
   grid-template-columns: 300px 300px;
   grid-template-rows: repeat(2, 100px) 1fr 1fr;
   grid-template-areas: "item1 item2" "item3 item4" "item5 item5" "item6 item6"; }
-  .form-grid .item-gen .p-form {
+  .form-grid .item-gen label {
     font-family: 'IM Fell French Canon SC', serif;
     padding: 0px;
     margin: 0px; }
@@ -327,7 +327,7 @@ nav #toggle, nav label {
     padding-top: 15px; }
     .form-grid .item6 .input-sub {
       background-color: #850000;
-      color: #fff;
+      color: #fcfcfc;
       width: 400px; }
       @media screen and (max-width: 580px) {
         .form-grid .item6 .input-sub {
@@ -368,6 +368,7 @@ nav #toggle, nav label {
   color: #fff; }
 
 .inputs {
+  color: #fff;
   background-color: #222222;
   height: 50px;
   width: 260px;

@@ -111,7 +111,7 @@
     "item5 item5"
     "item6 item6";
     .item-gen{
-        .p-form{
+        label{
             font-family: 'IM Fell French Canon SC', serif;
             padding:0px;
             margin: 0px;
@@ -152,7 +152,7 @@
         padding-top: 15px;
         .input-sub{
             background-color: $colorprinci;
-            color: #fff;
+            color: #fcfcfc;
             width: 400px;
             @include mobile{
                 width: 300px;
@@ -214,6 +214,7 @@
 }
 
 .inputs{
+    color: #fff;
     background-color: #222222;
     height: 50px;
     width: 260px;

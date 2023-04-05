@@ -54,29 +54,31 @@
                     <h2 class="text-h2-con">Escribenos</h2>
                 </div>
                 <div>
-                    <form class="form-grid">
+                    <!-- action: conectar form a php -->
+                    <!-- Method: POST-->
+                    <form  action="../form.php" class="form-grid"  method="post">
                         <div class="item1 item-gen">
-                            <p class="p-form">Nombre</p><br>
-                            <input type="text" name="name" placeholder="Ingrese su Nombre" class="inputs"><br>
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" name="name" placeholder="Ingrese su Nombre" class="inputs"><br>
                         </div>
                         <div class="item2 item-gen">
-                            <p class="p-form">Apellido</p><br>
-                            <input type="text" name="last-name" placeholder="Ingrese su Apellido" class="inputs"><br>
+                            <label for="apellido">Apellido</label>
+                            <input id="apellido" type="text" name="last-name" placeholder="Ingrese su Apellido" class="inputs"><br>
                         </div>
                         <div class="item3 item-gen">
-                            <p class="p-form">Email</p><br>
-                            <input type="email" name="email" placeholder="Ingrese su Email" class="inputs"><br>
+                            <label for="mail">Email</label>
+                            <input id="mail" type="email" name="email" placeholder="Ingrese su Email" class="inputs"><br>
                         </div>
                         <div class="item4 item-gen">
-                            <p class="p-form">Numero</p><br>
-                            <input type="text" name="number" placeholder="Ingrese su Numero" class="inputs"><br>
+                            <label for="numero">Numero</label>
+                            <input id="numero" type="text" name="number" placeholder="Ingrese su Numero" class="inputs"><br>
                         </div>
                         <div class="item5 item-gen">
-                            <p class="p-form">Mensaje</p><br>
-                            <textarea  name="menssage" class="inputs"></textarea><br>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="menssage" class="inputs"></textarea><br>
                         </div>
                         <div class="item6">
-                            <input type="submit" value="Enviar Mensaje" class="inputs input-sub">
+                            <input name="enviar" type="submit" value="Enviar Mensaje" class="inputs input-sub">
                         </div>
                     </form>
                 </div>
