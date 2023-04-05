@@ -478,6 +478,21 @@ nav #toggle, nav label {
       text-align: center;
       align-items: center; } }
 
+.container {
+  display: flex;
+  justify-content: center; }
+  .container .carrousel {
+    border: #850000 solid 8px;
+    display: flex;
+    max-width: 630px;
+    height: 450px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; }
+    .container .carrousel img {
+      width: 100%;
+      object-fit: cover;
+      scroll-snap-align: center; }
+
 .contenedor-entrenamiento2 {
   display: flex;
   padding: 40px;
@@ -516,6 +531,9 @@ nav #toggle, nav label {
 .salas p {
   margin: 10px;
   font-size: 25px; }
+  @media screen and (max-width: 1293px) {
+    .salas p {
+      font-size: 20px; } }
 
 /* Ejercicos */
 .background-ejer {
