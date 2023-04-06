@@ -115,6 +115,9 @@
             font-family: 'IM Fell French Canon SC', serif;
             padding:0px;
             margin: 0px;
+            @include mobile{
+                display: grid;
+            }
         }
     }
     .item1{
