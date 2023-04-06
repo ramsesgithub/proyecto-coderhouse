@@ -301,6 +301,9 @@ nav #toggle, nav label {
     font-family: 'IM Fell French Canon SC', serif;
     padding: 0px;
     margin: 0px; }
+    @media screen and (max-width: 580px) {
+      .form-grid .item-gen label {
+        display: grid; } }
   .form-grid .item1 {
     grid-area: item1; }
   .form-grid .item2 {
