@@ -30,8 +30,12 @@
 //Entrenadores
 @import "./layout/entrenadores/main";
 
+//404 error
+@import "./layout/404-error/_main.scss";
+
 //navbar-pages responsive
 @import "./layout/navbar-pages/media-query/media-query";
 
 //keyframes
 @import "./utilities/keyframes";
+

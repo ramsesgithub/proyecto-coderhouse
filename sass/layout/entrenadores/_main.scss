@@ -214,11 +214,12 @@
 
 .contendor-beneficios{
     background-color: #000000;
-    height: 400px;
+    height: 600px;
     width: 100%s;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: #850000 2px solid;
     @include tablet{
         display: flex;
         flex-direction: column;

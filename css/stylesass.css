@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -855,11 +856,12 @@ nav #toggle, nav label {
 
 .contendor-beneficios {
   background-color: #000000;
-  height: 400px;
+  height: 600px;
   width: 100%s;
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: #850000 2px solid; }
   @media screen and (max-width: 950px) {
     .contendor-beneficios {
       display: flex;
@@ -890,6 +892,63 @@ nav #toggle, nav label {
   color: #555353;
   font-size: 15px;
   padding: 0 40px; }
+
+.boddy-error {
+  background: -webkit-repeating-linear-gradient(-45deg, #850000, #d10808d0, #b60808, #000000);
+  height: 100vh;
+  background-size: 400%; }
+
+.error-div {
+  position: absolute;
+  top: 10%;
+  left: 17%;
+  right: 17%;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .error-div .contenido {
+    max-width: 600px;
+    text-align: center; }
+
+.contenido h1 {
+  font-size: 18vw;
+  line-height: 1em;
+  position: relative;
+  text-shadow: 2px 2px #850000;
+  font-family: "Poppins", sans-serif; }
+
+.contenido h2 {
+  text-transform: uppercase;
+  color: #000;
+  max-width: 600px;
+  font-size: 2em;
+  position: relative;
+  font-family: "Poppins", sans-serif; }
+
+.contenido p {
+  font-size: 1.2em;
+  color: #0d0d0d;
+  font-family: "Poppins", sans-serif; }
+
+.contenido .boton-error {
+  margin: 25 px 0;
+  display: inline-flex; }
+  .contenido .boton-error a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    background-color: #850000; }
+    .contenido .boton-error a:hover {
+      color: #fff;
+      background: #000; }
 
 /* Responsive NAVBAR-PAGES */
 @media (max-width: 1000px) {
