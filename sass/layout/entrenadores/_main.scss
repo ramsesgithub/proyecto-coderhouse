@@ -59,12 +59,12 @@
 
 .backgroud-grey{
     background-color: #ffffff;
-    height: 1200px;
+    height: 1500px;
     @include laptop_L{
         height: 1600px;
     }
-    @include mobile{
-        height: 2600px;
+    @include tablet_s{
+        height: 2100px;
     }
 }
 
@@ -76,10 +76,13 @@
         color: #000;
         font-family: 'Anton', sans-serif;
         font-size:45px;
-        padding: 50px 30px;
+        @include tablet{
+            text-align: center;
+        }
+        padding: 50px 0;
         @include mobile{
             font-size:30px;
-            text-align: center;
+            
         }
         @include mobile_s{
             font-size: 25px;
@@ -87,7 +90,7 @@
     }
     p{
         color: #929090;
-        padding: 3  0px 20px;
+        padding: 30px 20px;
         font-size: 20px;
         text-align: center;
         @include mobile{
@@ -109,6 +112,12 @@
 .card-entrenadores{
     position: relative;
     height: 500px;
+    @include laptop{
+        height: 400px;
+    }
+    @include tablet_s{
+        height: 310px;
+    }
     margin: 50px;
     box-shadow: 5px 5px 30px #000;
     overflow: hidden;
@@ -147,12 +156,26 @@
     .img-entrenador{
         height: 500px;
         width: 350px;
+        @include laptop{
+            height: 400px;
+            width: 250px;
+        }
+        @include tablet_s{
+            height: 310px;
+            width: 220px;
+        }
         border-radius: 3px;
         transition: .5s;
     }
     .p-entrenador{
         height: 70px;
         width: 350px;
+        @include laptop{
+            width: 250px;
+        }
+        @include tablet_s{
+            width: 220px;
+        }
         padding: 6px;
         box-sizing: border-box;
         position: absolute;
@@ -164,12 +187,19 @@
             font-family: 'Jockey One', sans-serif;
             text-align: center;
             font-size: 40px;
+            @include laptop{
+                font-size: 30px;
+            }
         }
         .des-entre{
             color:#000000;
             font-size: 15px;
-            margin: 20px;
+            margin: 10px;
             font-family: 'Jockey One', sans-serif;
+            @include laptop{
+                font-size: 12px;
+                margin: 5px;
+            }
         }
     }
     .color-entre1{
@@ -212,15 +242,18 @@
         height: 1000px;
     }
     @include laptop{
-        height: 1100px;
+        height: 1200px;
     }
     @include tablet{
         display: flex;
         flex-direction: column;
-        height: 1200px;
+        height: 1300px;
     }
     @include mobile{
-        height: 17  00px;
+        height: 1800px;
+    }
+    @include mobile_s{
+        height: 1900px;
     }
 }
 
@@ -234,6 +267,10 @@
         padding-left: 40px;
         font-size: 40px;
         font-family: Anton;
+        @include tablet_s{
+            text-align: center;
+            padding-left: 0;
+        }
     }
 }
 .beneficios{
@@ -241,8 +278,10 @@
         color: #555353;
         font-size: 20px;
         padding: 0 40px;
+        @include tablet_s{
+            padding: 0 10px;
+        }
     }
-
 }
 .h4-p{
     h4{
@@ -251,14 +290,17 @@
         padding-left: 40px;
         font-size: 35px;
         font-family: Anton;
+        @include tablet_s{
+            text-align: center;
+            padding-left: 0;
+        }
     }
-}
-.h4-p{
     p{
         color: #555353;
         font-size: 15px;
         padding: 0 40px;
     }
 }
+
 
 

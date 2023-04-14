@@ -738,30 +738,32 @@ nav #toggle, nav label {
 
 .backgroud-grey {
   background-color: #ffffff;
-  height: 1200px; }
+  height: 1500px; }
   @media screen and (max-width: 1293px) {
     .backgroud-grey {
       height: 1600px; } }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 705px) {
     .backgroud-grey {
-      height: 2600px; } }
+      height: 2100px; } }
 
 .h2-entrenadores h2 {
   color: #000;
   font-family: 'Anton', sans-serif;
   font-size: 45px;
-  padding: 50px 30px; }
+  padding: 50px 0; }
+  @media screen and (max-width: 950px) {
+    .h2-entrenadores h2 {
+      text-align: center; } }
   @media screen and (max-width: 580px) {
     .h2-entrenadores h2 {
-      font-size: 30px;
-      text-align: center; } }
+      font-size: 30px; } }
   @media screen and (max-width: 336px) {
     .h2-entrenadores h2 {
       font-size: 25px; } }
 
 .h2-entrenadores p {
   color: #929090;
-  padding: 3  0px 20px;
+  padding: 30px 20px;
   font-size: 20px;
   text-align: center; }
   @media screen and (max-width: 580px) {
@@ -782,6 +784,12 @@ nav #toggle, nav label {
   box-shadow: 5px 5px 30px #000;
   overflow: hidden;
   border-radius: 30px; }
+  @media screen and (max-width: 1024px) {
+    .card-entrenadores {
+      height: 400px; } }
+  @media screen and (max-width: 705px) {
+    .card-entrenadores {
+      height: 310px; } }
   .card-entrenadores:hover {
     cursor: pointer; }
     .card-entrenadores:hover .p-entrenador {
@@ -807,6 +815,14 @@ nav #toggle, nav label {
     width: 350px;
     border-radius: 3px;
     transition: .5s; }
+    @media screen and (max-width: 1024px) {
+      .card-entrenadores .img-entrenador {
+        height: 400px;
+        width: 250px; } }
+    @media screen and (max-width: 705px) {
+      .card-entrenadores .img-entrenador {
+        height: 310px;
+        width: 220px; } }
   .card-entrenadores .p-entrenador {
     height: 70px;
     width: 350px;
@@ -817,15 +833,28 @@ nav #toggle, nav label {
     background-color: #1b1b1b;
     color: #fff;
     transition: .5s; }
+    @media screen and (max-width: 1024px) {
+      .card-entrenadores .p-entrenador {
+        width: 250px; } }
+    @media screen and (max-width: 705px) {
+      .card-entrenadores .p-entrenador {
+        width: 220px; } }
     .card-entrenadores .p-entrenador .nom-entre {
       font-family: 'Jockey One', sans-serif;
       text-align: center;
       font-size: 40px; }
+      @media screen and (max-width: 1024px) {
+        .card-entrenadores .p-entrenador .nom-entre {
+          font-size: 30px; } }
     .card-entrenadores .p-entrenador .des-entre {
       color: #000000;
       font-size: 15px;
-      margin: 20px;
+      margin: 10px;
       font-family: 'Jockey One', sans-serif; }
+      @media screen and (max-width: 1024px) {
+        .card-entrenadores .p-entrenador .des-entre {
+          font-size: 12px;
+          margin: 5px; } }
   .card-entrenadores .color-entre1 {
     background: #57679F; }
     .card-entrenadores .color-entre1 p {
@@ -855,15 +884,18 @@ nav #toggle, nav label {
       height: 1000px; } }
   @media screen and (max-width: 1024px) {
     .contendor-beneficios {
-      height: 1100px; } }
+      height: 1200px; } }
   @media screen and (max-width: 950px) {
     .contendor-beneficios {
       display: flex;
       flex-direction: column;
-      height: 1200px; } }
+      height: 1300px; } }
   @media screen and (max-width: 580px) {
     .contendor-beneficios {
-      height: 17  00px; } }
+      height: 1800px; } }
+  @media screen and (max-width: 336px) {
+    .contendor-beneficios {
+      height: 1900px; } }
 
 .beneficios {
   grid-column: 1/6; }
@@ -874,11 +906,18 @@ nav #toggle, nav label {
   padding-left: 40px;
   font-size: 40px;
   font-family: Anton; }
+  @media screen and (max-width: 705px) {
+    .beneficios h3 {
+      text-align: center;
+      padding-left: 0; } }
 
 .beneficios p {
   color: #555353;
   font-size: 20px;
   padding: 0 40px; }
+  @media screen and (max-width: 705px) {
+    .beneficios p {
+      padding: 0 10px; } }
 
 .h4-p h4 {
   color: #850000;
@@ -886,6 +925,10 @@ nav #toggle, nav label {
   padding-left: 40px;
   font-size: 35px;
   font-family: Anton; }
+  @media screen and (max-width: 705px) {
+    .h4-p h4 {
+      text-align: center;
+      padding-left: 0; } }
 
 .h4-p p {
   color: #555353;
@@ -970,9 +1013,11 @@ nav #toggle, nav label {
     left: 0;
     background-color: #000000;
     height: 100%;
-    z-index: 10000; }
+    z-index: 10000;
+    transition: .5s; }
   .menu ul li a {
-    font-size: 25px; } }
+    font-size: 25px;
+    padding-left: 10px; } }
 
 @media (max-width: 320px) {
   .logo p {

@@ -10,11 +10,20 @@
     }
 }
 
+
+
 @mixin tablet{
     @media screen and (max-width:950px){
         @content;
     }
 }
+
+@mixin tablet_s{
+    @media screen and (max-width:705px){
+        @content;
+    }
+}
+
 @mixin mobile{
     @media screen and (max-width:580px){
         @content;
