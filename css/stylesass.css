@@ -769,87 +769,77 @@ nav #toggle, nav label {
       font-size: 15px; } }
 
 .container-entrenadores {
-  height: 600px;
+  height: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
 
-.box {
-  height: 350px;
-  width: 300px;
-  text-align: center;
+.card-entrenadores {
+  position: relative;
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 30px #000;
   overflow: hidden;
-  position: relative;
-  margin: 1.5%;
-  border-radius: 40px 40px 0 0;
-  z-index: 100; }
-  .box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .box .hover {
-    width: 0%;
-    height: 50vh;
-    background-color: #b1afafab;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    overflow: hidden; }
-    .box .hover p {
+  border-radius: 30px; }
+  .card-entrenadores:hover {
+    cursor: pointer; }
+    .card-entrenadores:hover .p-entrenador {
+      height: 220px;
+      background: #00000094; }
+    .card-entrenadores:hover .color-entre1 {
+      background: #57679f96; }
+    .card-entrenadores:hover .color-entre2 .des-entre {
+      color: #fff; }
+    .card-entrenadores:hover .color-entre3 {
+      background: #e3bb56a9; }
+    .card-entrenadores:hover .color-entre4 {
+      background: #85000098; }
+      .card-entrenadores:hover .color-entre4 .des-entre {
+        color: #fff; }
+    .card-entrenadores:hover .des-entre {
       color: #fff;
-      text-shadow: 1px 1px 1px black;
+      z-index: 100000; }
+    .card-entrenadores:hover .img-entrenador {
+      transform: scale(1.1) rotate(-3deg); }
+  .card-entrenadores .img-entrenador {
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s; }
+  .card-entrenadores .p-entrenador {
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background-color: #1b1b1b;
+    color: #fff;
+    transition: .5s; }
+    .card-entrenadores .p-entrenador .nom-entre {
+      font-family: 'Jockey One', sans-serif;
+      text-align: center;
+      font-size: 40px; }
+    .card-entrenadores .p-entrenador .des-entre {
+      color: #000000;
       font-size: 15px;
-      text-transform: uppercase; }
-  .box:hover .hover {
-    width: 100%; }
-
-.div-nombre {
-  z-index: 1000000;
-  height: 130px;
-  width: 310px;
-  background-color: #57679F; }
-  .div-nombre .nombre-ent {
-    font-size: 30px;
-    text-align: center; }
-  @media screen and (max-width: 336px) {
-    .div-nombre {
-      width: 250px; } }
-
-.entglobal img {
-  box-shadow: 0px 20px 63px -3px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 20px 63px -3px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 20px 63px -3px rgba(0, 0, 0, 0.66);
-  height: 350px;
-  width: 300px;
-  border-radius: 40px 40px 0 0;
-  z-index: -2; }
-  @media screen and (max-width: 336px) {
-    .entglobal img {
-      width: 250px;
-      height: 300px; } }
-
-.entglobal a {
-  text-decoration: none;
-  color: #fff; }
-
-.entglobal div {
-  position: relative;
-  z-index: 100;
-  margin-top: -40px;
-  height: 150px;
-  width: 400px;
-  border-radius: 30px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.rol {
-  font-size: 25px;
-  text-align: center;
-  color: #8f8e8e; }
+      margin: 20px;
+      font-family: 'Jockey One', sans-serif; }
+  .card-entrenadores .color-entre1 {
+    background: #57679F; }
+    .card-entrenadores .color-entre1 p {
+      color: #000; }
+  .card-entrenadores .color-entre2 {
+    background: #000; }
+    .card-entrenadores .color-entre2 p {
+      color: #fff; }
+  .card-entrenadores .color-entre3 {
+    background: #E3BC56; }
+    .card-entrenadores .color-entre3 p {
+      color: #000; }
+  .card-entrenadores .color-entre4 {
+    background: #850000; }
 
 .contendor-beneficios {
   background-color: #fafafa;

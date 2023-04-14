@@ -97,125 +97,105 @@
 }
 
 
-// .container-entrenadores{
-//     width: 100%;
-//     display: grid;
-//     grid-template-columns: auto auto auto auto;
-//     justify-content: space-evenly;
-//     align-content: center; 
-//     row-gap: 70px;
-//     padding-top: 100px;
-//     @include laptop_L{
-//         grid-template-columns: auto auto;
-//         grid-template-rows:  auto auto;
-//     }
-//     @include mobile{
-//         grid-template-columns: 1fr;
-//         grid-template-rows:  auto auto auto auto;
-//     }
-// }
 
 .container-entrenadores{
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-
-.box{
-    height: 350px;
-    width: 300px;
-    text-align: center;
-    overflow: hidden;
+.card-entrenadores{
     position: relative;
-    margin: 1.5%;
-    border-radius: 40px 40px 0 0;
-    z-index: 100;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 30px #000;
+    overflow: hidden;
+    border-radius: 30px;
+    &:hover{
+        cursor:pointer;
+        .p-entrenador{
+            height: 220px;
+            background: #00000094;
+        }
+        .color-entre1{
+            background: #57679f96;
+        }
+        .color-entre2{
+            .des-entre{
+                color: #fff;
+            }
+        }
+        .color-entre3{
+            background: #e3bb56a9;
+        }
+        .color-entre4{
+            background: #85000098;
+            .des-entre{
+                color: #fff;
+            }
+        }
+        .des-entre{
+            color:#fff;
+            z-index: 100000;
+        }
+        .img-entrenador{
+            transform: scale(1.1) rotate(-3deg);
+        }
     }
-    .hover{
-        width: 0%;
-        height: 50vh;
-        background-color: #b1afafab;
+    .img-entrenador{
+        height: 500px;
+        width: 350px;
+        border-radius: 3px;
+        transition: .5s;
+    }
+    .p-entrenador{
+        height: 70px;
+        width: 350px;
+        padding: 6px;
+        box-sizing: border-box;
         position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        overflow: hidden;
+        bottom: 0;
+        background-color: rgb(27,27,27);
+        color: #fff;
+        transition: .5s;
+        .nom-entre{
+            font-family: 'Jockey One', sans-serif;
+            text-align: center;
+            font-size: 40px;
+        }
+        .des-entre{
+            color:#000000;
+            font-size: 15px;
+            margin: 20px;
+            font-family: 'Jockey One', sans-serif;
+        }
+    }
+    .color-entre1{
+        background: #57679F;
+        p{
+            color: #000;
+        }
+    }
+    .color-entre2{
+        background: #000;
         p{
             color: #fff;
-            text-shadow: 1px 1px 1px black;
-            font-size:15px;
-            text-transform: uppercase;
         }
     }
-    &:hover{
-        .hover{
-            width: 100%;
+    .color-entre3{
+        background: #E3BC56;
+        p{
+            color: #000;
         }
     }
-}
-
-
-
-.div-nombre{
-    z-index: 1000000;
-    height: 130px;
-    width: 310px;
-    background-color:#57679F;
-    .nombre-ent{
-        font-size: 30px;
-        text-align: center;
-    }
-    @include mobile_s{
-        width: 250px;
-    }
-}
-
-.entglobal{
-    img{
-        box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
-        -moz-box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
-        box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
-        height: 350px;
-        width: 300px;
-        border-radius: 40px 40px 0 0;
-        z-index: -2;
-        @include mobile_s{
-            width: 250px;
-            height: 300px;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
-    div{
-        position: relative;
-        z-index: 100;
-        margin-top: -40px;
-        height: 150px;
-        width: 400px;
-        border-radius:30px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .color-entre4{
+        background: #850000;
     }
 }
 
 
-
-.rol{
-    font-size: 25px;
-    text-align: center;
-    color: rgb(143, 142, 142);
-}
 
 
 
