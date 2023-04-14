@@ -97,27 +97,92 @@
 }
 
 
+// .container-entrenadores{
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: auto auto auto auto;
+//     justify-content: space-evenly;
+//     align-content: center; 
+//     row-gap: 70px;
+//     padding-top: 100px;
+//     @include laptop_L{
+//         grid-template-columns: auto auto;
+//         grid-template-rows:  auto auto;
+//     }
+//     @include mobile{
+//         grid-template-columns: 1fr;
+//         grid-template-rows:  auto auto auto auto;
+//     }
+// }
+
 .container-entrenadores{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: center; 
-    row-gap: 70px;
-    padding-top: 100px;
-    @include laptop_L{
-        grid-template-columns: auto auto;
-        grid-template-rows:  auto auto;
+    align-items: center;
+}
+
+
+.box{
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    border-radius: 40px 40px 0 0;
+    z-index: 100;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    @include mobile{
-        grid-template-columns: 1fr;
-        grid-template-rows:  auto auto auto auto;
+    .hover{
+        width: 0%;
+        height: 50vh;
+        background-color: #b1afafab;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        overflow: hidden;
+        p{
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+            font-size:15px;
+            text-transform: uppercase;
+        }
+    }
+    &:hover{
+        .hover{
+            width: 100%;
+        }
     }
 }
 
 
+
+.div-nombre{
+    z-index: 1000000;
+    height: 130px;
+    width: 310px;
+    background-color:#57679F;
+    .nombre-ent{
+        font-size: 30px;
+        text-align: center;
+    }
+    @include mobile_s{
+        width: 250px;
+    }
+}
+
 .entglobal{
     img{
+        box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
+        -moz-box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
+        box-shadow: 0px 20px 63px -3px rgba(0,0,0,0.66);
         height: 350px;
         width: 300px;
         border-radius: 40px 40px 0 0;
@@ -145,10 +210,6 @@
 }
 
 
-.nombre-ent{
-    font-size: 45px;
-    text-align: center;
-}
 
 .rol{
     font-size: 25px;
@@ -157,69 +218,6 @@
 }
 
 
-.ent1{
-    div{
-        height: 150px;
-        width: 300px;
-        background-color:#57679F ;
-        color: #000;
-        font-family: 'Jockey One', sans-serif;
-        @include mobile_s{
-            width: 250px;
-        }
-    }
-    @include mobile{
-        justify-self: center;
-    }
-}
-
-.ent2{
-    div{
-        height: 150px;
-        width: 300px;
-        background-color:#000000 ;
-        color: #ffffff;
-        font-family: 'Jockey One', sans-serif;
-        @include mobile_s{
-            width: 250px;
-        }
-    }
-    @include mobile{
-        justify-self: center;
-    }
-}
-
-.ent3{
-    div{
-        height: 150px;
-        width: 300px;
-        background-color:#E3BC56 ;
-        color: #000000;
-        font-family: 'Jockey One', sans-serif;
-        @include mobile_s{
-            width: 250px;
-        }
-    }
-    @include mobile{
-        justify-self: center;
-    }
-}
-
-.ent4 {
-    div{    
-        height: 150px;
-        width: 300px;
-        background-color:#850000 ;
-        color: grey;
-        font-family: 'Jockey One', sans-serif;
-        @include mobile_s{
-            width: 250px;
-        }
-    }
-    @include mobile{
-        justify-self: center;
-    }
-}
 
 .contendor-beneficios{
     background-color: #fafafa;
