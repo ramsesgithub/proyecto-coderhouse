@@ -725,6 +725,41 @@ nav #toggle, nav label {
     .containesejercicios {
       grid-template-columns: auto; } }
 
+.sec-img {
+  margin-bottom: 50px;
+  border-top: 8px solid #850000; }
+  .sec-img h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Anton', sans-serif; }
+  .sec-img h3 {
+    text-align: center; }
+
+.conteiner-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px; }
+  .conteiner-img .galeria {
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
+    border-radius: 20px; }
+    .conteiner-img .galeria .foto {
+      transition: .3s; }
+      .conteiner-img .galeria .foto:hover {
+        transform: scale(1.03);
+        transition: .3s; }
+    .conteiner-img .galeria .pie {
+      text-align: center;
+      font-size: 17px;
+      font-family: 'IM Fell French Canon SC', serif; }
+  .conteiner-img img {
+    width: 500px;
+    height: 390px;
+    justify-self: center;
+    border-radius: 20px 20px 0 0; }
+
 /* Entrenadores */
 .backgorund-entrenadores {
   background-image: linear-gradient(90deg, rgba(187, 4, 4, 0.818365) 18%, rgba(142, 6, 6, 0) 30%, rgba(25, 25, 25, 0.916404) 82%), url("../assets/img/bodybuilder-646482_1920.jpg");

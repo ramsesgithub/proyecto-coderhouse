@@ -107,3 +107,47 @@
         grid-template-columns: auto;
     }
 }
+
+.sec-img{
+    margin-bottom: 50px;
+    border-top: 8px solid $colorprinci;
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 40px 0;
+        font-family: 'Anton', sans-serif;}
+    h3{
+        text-align: center;
+    }
+}
+
+.conteiner-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    .galeria{
+        align-self: center;
+        justify-self: center;
+        box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
+        border-radius: 20px;
+        .foto{
+            transition: .3s;
+            &:hover{
+                transform: scale(1.03);
+                transition: .3s;
+            }
+        }
+        .pie{
+            text-align: center;
+            font-size: 17px;
+            font-family: 'IM Fell French Canon SC', serif;
+        }
+    }
+    img{
+        width: 500px;
+        height: 390px;
+        justify-self: center;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
