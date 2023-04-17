@@ -1,3 +1,9 @@
+@mixin pc{
+    @media screen and (max-width:1586px){
+        @content;
+    }
+} 
+
 @mixin laptop_L{
     @media screen and (max-width:1293px){
         @content;

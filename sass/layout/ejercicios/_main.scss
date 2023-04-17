@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     height: 2000px;
-    @include laptop{
+    @include laptop_L{
         height: 2500px;
     }
     @include mobile{
@@ -99,7 +99,7 @@
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     row-gap: 70px;
-    @include laptop{
+    @include laptop_L{
         grid-template-columns: auto auto;
         row-gap: 90px;
     }
@@ -110,14 +110,26 @@
 
 .sec-img{
     margin-bottom: 50px;
-    border-top: 8px solid $colorprinci;
+    border-top: 9px solid $colorprinci;
     h2{
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
         margin: 40px 0;
-        font-family: 'Anton', sans-serif;}
+        font-family: 'Anton', sans-serif;
+        @include tablet_s{
+            font-size: 35px;
+        }
+        @include mobile_s{
+            font-size: 20px;
+        }
+    }
     h3{
+        font-size: 30px;
         text-align: center;
+        font-family: 'IM Fell French Canon SC', serif;
+        @include tablet_s{
+            font-size: 20px;
+        }
     }
 }
 
@@ -125,6 +137,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+    }
+    @include tablet_s{
+        grid-template-columns: 1fr;
+    }
     .galeria{
         align-self: center;
         justify-self: center;
@@ -148,6 +166,19 @@
         height: 390px;
         justify-self: center;
         border-radius: 20px 20px 0 0;
+        transition: .3s;
+        @include pc{
+            width: 400px;
+            height: 350px;
+            transition: .3s;
+        }
+        @include laptop_L{
+            width: 310px;
+            height: 250px;
+            transition: .3s;
+        }
     }
 }
-
+main{
+    border-bottom: 9px solid $colorprinci; ;
+}

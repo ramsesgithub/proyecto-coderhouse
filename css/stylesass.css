@@ -636,7 +636,7 @@ nav #toggle, nav label {
   background-size: cover;
   width: 100%;
   height: 2000px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1293px) {
     .background-ejer {
       height: 2500px; } }
   @media screen and (max-width: 580px) {
@@ -717,7 +717,7 @@ nav #toggle, nav label {
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
   row-gap: 70px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1293px) {
     .containesejercicios {
       grid-template-columns: auto auto;
       row-gap: 90px; } }
@@ -727,19 +727,36 @@ nav #toggle, nav label {
 
 .sec-img {
   margin-bottom: 50px;
-  border-top: 8px solid #850000; }
+  border-top: 9px solid #850000; }
   .sec-img h2 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     margin: 40px 0;
     font-family: 'Anton', sans-serif; }
+    @media screen and (max-width: 705px) {
+      .sec-img h2 {
+        font-size: 35px; } }
+    @media screen and (max-width: 336px) {
+      .sec-img h2 {
+        font-size: 20px; } }
   .sec-img h3 {
-    text-align: center; }
+    font-size: 30px;
+    text-align: center;
+    font-family: 'IM Fell French Canon SC', serif; }
+    @media screen and (max-width: 705px) {
+      .sec-img h3 {
+        font-size: 20px; } }
 
 .conteiner-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px; }
+  @media screen and (max-width: 950px) {
+    .conteiner-img {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 705px) {
+    .conteiner-img {
+      grid-template-columns: 1fr; } }
   .conteiner-img .galeria {
     align-self: center;
     justify-self: center;
@@ -758,7 +775,21 @@ nav #toggle, nav label {
     width: 500px;
     height: 390px;
     justify-self: center;
-    border-radius: 20px 20px 0 0; }
+    border-radius: 20px 20px 0 0;
+    transition: .3s; }
+    @media screen and (max-width: 1586px) {
+      .conteiner-img img {
+        width: 400px;
+        height: 350px;
+        transition: .3s; } }
+    @media screen and (max-width: 1293px) {
+      .conteiner-img img {
+        width: 310px;
+        height: 250px;
+        transition: .3s; } }
+
+main {
+  border-bottom: 9px solid #850000; }
 
 /* Entrenadores */
 .backgorund-entrenadores {
