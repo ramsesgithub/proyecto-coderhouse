@@ -136,7 +136,11 @@ b {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: .3s; }
+    .navbar-index li:hover {
+      transform: scale(1.1);
+      transition: .3s; }
     @media screen and (max-width: 580px) {
       .navbar-index li {
         width: 160px;
@@ -787,9 +791,6 @@ nav #toggle, nav label {
         width: 310px;
         height: 250px;
         transition: .3s; } }
-
-main {
-  border-bottom: 9px solid #850000; }
 
 /* Entrenadores */
 .backgorund-entrenadores {
