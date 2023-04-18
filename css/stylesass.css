@@ -746,7 +746,8 @@ nav #toggle, nav label {
   .sec-img h3 {
     font-size: 30px;
     text-align: center;
-    font-family: 'IM Fell French Canon SC', serif; }
+    font-family: 'IM Fell French Canon SC', serif;
+    margin: 30px 0; }
     @media screen and (max-width: 705px) {
       .sec-img h3 {
         font-size: 20px; } }
@@ -843,7 +844,8 @@ nav #toggle, nav label {
       font-size: 15px; } }
 
 .backgroud-grey {
-  background-color: #ffffff;
+  background: #6e6e6e;
+  background: linear-gradient(0deg, #6e6e6e 0%, white 38%);
   height: 1500px; }
   @media screen and (max-width: 1293px) {
     .backgroud-grey {
@@ -978,13 +980,13 @@ nav #toggle, nav label {
 
 .contendor-beneficios {
   background-color: #fafafa;
-  height: 900px;
+  height: 800px;
   width: 100%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-bottom: #850000 5px solid;
-  border-top: #850000 5px solid; }
+  border-bottom: #850000 9px double;
+  border-top: #850000 9px double; }
   @media screen and (max-width: 1293px) {
     .contendor-beneficios {
       height: 1000px; } }
@@ -1004,7 +1006,8 @@ nav #toggle, nav label {
       height: 1900px; } }
 
 .beneficios {
-  grid-column: 1/6; }
+  grid-column: 1/6;
+  align-self: flex-end; }
 
 .beneficios h3 {
   color: #850000;

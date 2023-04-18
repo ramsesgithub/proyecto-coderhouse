@@ -58,7 +58,8 @@
 
 
 .backgroud-grey{
-    background-color: #ffffff;
+    background: rgb(110,110,110);
+    background: linear-gradient(0deg, rgba(110,110,110,1) 0%, rgba(255,255,255,1) 38%);
     height: 1500px;
     @include laptop_L{
         height: 1600px;
@@ -231,13 +232,13 @@
 
 .contendor-beneficios{
     background-color: #fafafa;
-    height: 900px;
+    height: 800px;
     width: 100%;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border-bottom: $colorprinci 5px solid;
-    border-top: $colorprinci 5px solid;
+    border-bottom: $colorprinci 9px double;
+    border-top: $colorprinci 9px double;
     @include laptop_L{
         height: 1000px;
     }
@@ -259,6 +260,7 @@
 
 .beneficios{
     grid-column: 1/6;
+    align-self: flex-end;
 }
 .beneficios{
     h3{
