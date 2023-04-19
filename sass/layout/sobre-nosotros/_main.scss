@@ -66,13 +66,14 @@
             transition: all .5s ease;
         }
         @include tablet{
-            width: 180px;
+            width: 260px;
             height: 250px;
         }
     }
     @include mobile{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+        row-gap: 40px;
     }
 }
 
