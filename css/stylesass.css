@@ -655,7 +655,7 @@ nav #toggle, nav label {
       height: 2500px; } }
   @media screen and (max-width: 580px) {
     .background-ejer {
-      height: 2800px;
+      height: 2000px;
       background-position: center; } }
   @media screen and (max-width: 336px) {
     .background-ejer {
