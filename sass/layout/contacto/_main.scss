@@ -242,6 +242,70 @@
     }
 }
 
+.horarios{
+    font-family: Anton;
+    font-size: 40px;
+    color: #000000;
+    @include tablet_s{
+        text-align: center;
+    }
+}
+
+.table{
+    border: none;
+    .res{
+        display: flex;
+        flex-direction: column;
+    }
+    tr{
+        border: none;
+        text-align: center;
+        th{
+            border: none;
+            font-family: 'Jockey One', sans-serif;
+            font-size: 26px;
+        }
+        td{
+            border: none;
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    @include tablet_s{
+        display: none;
+    }
+}
+
+.feriado{
+    color: #000000;
+}
+.closed{
+    color: #bd0606;
+}
+
+.tabla-res{
+    display: none;
+    @include tablet_s{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    tr{
+        th{
+            font-family: 'Jockey One', sans-serif;
+            font-size: 26px;
+        }
+        td{
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    margin: 40px 0;
+}
+
+
 .back-black{
     border-bottom: 8px double $colorprinci;
     border-top: 8px double $colorprinci;
@@ -257,7 +321,8 @@
 .local{
     h2{
         color: #000000;
-        font-family: Anton;
+        font-family: 'Jockey One', sans-serif;
+        font-size: 40px;
     }
     p{
         color:#000000;

@@ -404,6 +404,57 @@ nav #toggle, nav label {
     .inputs {
       width: 250px; } }
 
+.horarios {
+  font-family: Anton;
+  font-size: 40px;
+  color: #000000; }
+  @media screen and (max-width: 705px) {
+    .horarios {
+      text-align: center; } }
+
+.table {
+  border: none; }
+  .table .res {
+    display: flex;
+    flex-direction: column; }
+  .table tr {
+    border: none;
+    text-align: center; }
+    .table tr th {
+      border: none;
+      font-family: 'Jockey One', sans-serif;
+      font-size: 26px; }
+    .table tr td {
+      border: none;
+      font-family: 'IM Fell French Canon SC', serif;
+      font-size: 20px;
+      font-weight: bold; }
+  @media screen and (max-width: 705px) {
+    .table {
+      display: none; } }
+
+.feriado {
+  color: #000000; }
+
+.closed {
+  color: #bd0606; }
+
+.tabla-res {
+  display: none;
+  margin: 40px 0; }
+  @media screen and (max-width: 705px) {
+    .tabla-res {
+      display: flex;
+      justify-content: center;
+      text-align: center; } }
+  .tabla-res tr th {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 26px; }
+  .tabla-res tr td {
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 20px;
+    font-weight: bold; }
+
 .back-black {
   border-bottom: 8px double #850000;
   border-top: 8px double #850000;
@@ -417,7 +468,8 @@ nav #toggle, nav label {
 
 .local h2 {
   color: #000000;
-  font-family: Anton; }
+  font-family: 'Jockey One', sans-serif;
+  font-size: 40px; }
 
 .local p {
   color: #000000; }
