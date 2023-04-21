@@ -140,12 +140,12 @@
             height: 250px;
             @include mobile{
                 justify-self: center;
-                width: 300px;
+                width: 340px;
                 height: 220px;
                 margin: 0;
             }
             @include mobile_s{
-                width: 220px;
+                width: 270px;
             }
         }
     }
@@ -153,6 +153,7 @@
         grid-area: item6;
         justify-self: center;
         padding-top: 15px;
+        transition: .3s;
         .input-sub{
             background-color: $colorprinci;
             color: #fcfcfc;
@@ -162,6 +163,12 @@
             }
             @include mobile_s{
                 width: 210px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: #000000;
+                transition: .3s;
+                transform: scale(1.2);
             }
         }
         @include mobile{
@@ -212,8 +219,10 @@
     }
 }
 
-.item-gen input{
-    color: #fff;
+.item-gen{
+    input{
+        color: #fff;
+    }
 }
 
 .inputs{
@@ -223,8 +232,11 @@
     width: 260px;
     margin-left: 5px;
     border: 5px solid $colorprinci;
+    @include mobile{
+        width: 330px;
+    }
     @include mobile_s{
-        width: 210px;
+        width: 250px;
     }
 }
 

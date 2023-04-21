@@ -330,16 +330,17 @@ nav #toggle, nav label {
       @media screen and (max-width: 580px) {
         .form-grid .item5 textarea {
           justify-self: center;
-          width: 300px;
+          width: 340px;
           height: 220px;
           margin: 0; } }
       @media screen and (max-width: 336px) {
         .form-grid .item5 textarea {
-          width: 220px; } }
+          width: 270px; } }
   .form-grid .item6 {
     grid-area: item6;
     justify-self: center;
-    padding-top: 15px; }
+    padding-top: 15px;
+    transition: .3s; }
     .form-grid .item6 .input-sub {
       background-color: #850000;
       color: #fcfcfc;
@@ -350,6 +351,11 @@ nav #toggle, nav label {
       @media screen and (max-width: 336px) {
         .form-grid .item6 .input-sub {
           width: 210px; } }
+      .form-grid .item6 .input-sub:hover {
+        color: #fff;
+        background-color: #000000;
+        transition: .3s;
+        transform: scale(1.2); }
     @media screen and (max-width: 580px) {
       .form-grid .item6 {
         padding: 0px; } }
@@ -389,9 +395,12 @@ nav #toggle, nav label {
   width: 260px;
   margin-left: 5px;
   border: 5px solid #850000; }
+  @media screen and (max-width: 580px) {
+    .inputs {
+      width: 330px; } }
   @media screen and (max-width: 336px) {
     .inputs {
-      width: 210px; } }
+      width: 250px; } }
 
 .back-black {
   border-bottom: 8px double #850000;
