@@ -60,23 +60,23 @@
                     <form  action="../form.php" class="form-grid"  method="post">
                         <div class="item1 item-gen">
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="name" placeholder="Ingrese su Nombre" class="inputs" required="required"><br>
+                            <input id="nombre" type="text" name="name" data-tipo="nombre" placeholder="Ingrese su Nombre" class="inputs" required pattern="[a-zA-Z ]{2,50}"><br>
                         </div>
                         <div class="item2 item-gen">
                             <label for="apellido">Apellido</label>
-                            <input id="apellido" type="text" name="last-name" placeholder="Ingrese su Apellido" class="inputs"><br>
+                            <input id="apellido" type="text" name="last-name" data-tipo="apellido" placeholder="Ingrese su Apellido" class="inputs" pattern="[a-zA-Z ]{2,50}"><br>
                         </div>
                         <div class="item3 item-gen">
                             <label for="mail">Email</label>
-                            <input id="mail" type="email" name="email" placeholder="Ingrese su Email" class="inputs" required="required"><br>
+                            <input id="mail" type="email" name="email" data-tipo="email" placeholder="Ingrese su Email" class="inputs" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
                         </div>
                         <div class="item4 item-gen">
                             <label for="numero">Numero</label>
-                            <input id="numero" type="text" name="number" placeholder="Ingrese su Numero" class="inputs"><br>
+                            <input id="numero" type="number" name="number" data-tipo="numero" placeholder="Ingrese su Numero" class="inputs" pattern="[0-9]+"><br>
                         </div>
                         <div class="item5 item-gen">
                             <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="menssage" class="inputs" required="required"></textarea><br>
+                            <textarea id="mensaje" name="menssage" data-tipo="mensaje" class="inputs" required></textarea><br>
                         </div>
                         <div class="item6">
                             <input name="enviar" type="submit" value="Enviar Mensaje" class="inputs input-sub">
@@ -245,5 +245,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
 </body>
 </html> 
